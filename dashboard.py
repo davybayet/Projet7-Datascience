@@ -1,7 +1,6 @@
 """Application : Dashboard de Crédit Score
 
 Local URL: http://localhost:8501
-Network URL: http://192.168.1.20:8501
 """
 
 __version__ = '0.0.0'
@@ -11,9 +10,10 @@ __version__ = '0.0.0'
 # ====================================================================
 import streamlit as st
 import numpy as np
-# import pandas as pd
+import pandas as pd
 from PIL import Image
 import pickle
+import plotly
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 import matplotlib.lines as mlines
