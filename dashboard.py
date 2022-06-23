@@ -13,7 +13,6 @@ import numpy as np
 import pandas as pd
 from PIL import Image
 import pickle
-import plotly
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 import matplotlib.lines as mlines
