@@ -11,6 +11,7 @@ __version__ = '0.0.0'
 import streamlit as st
 import numpy as np
 # import pandas as pd
+import requests
 from PIL import Image
 import pickle
 import plotly.graph_objects as go
