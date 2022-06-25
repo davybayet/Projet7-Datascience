@@ -81,34 +81,34 @@ group_val4 = ['CAR_EMPLOYED_RATIO_MEAN', 'CODE_GENDER_MEAN',
 # IMAGES
 # ====================================================================
 # Logo de l'entreprise
-logo =  Image.open("resources/images/logo.png")
+logo =  Image.open("resources/images/logo.png") 
 # Légende des courbes
-lineplot_legende =  Image.open("resources/images/lineplot_legende.png")
+lineplot_legende =  Image.open("resources/images/lineplot_legende.png") 
 
 # ====================================================================
 # HTML MARKDOWN
 # ====================================================================
 html_AMT_ANNUITY = "<h4 style='text-align: center'>AMT_ANNUITY</h4> <br/> <h5 style='text-align: center'>Annuité du prêt</h5> <hr/>"
-html_BUREAU_CURRENT_CREDIT_DEBT_DIFF_MIN = "<h4 style='text-align: center'>BUREAU_CURRENT_CREDIT_DEBT_DIFF_MIN</h4> <br/> <h5 style='text-align: center'>Valeur minimale de la différence entre la limite de crédit actuelle de la carte de crédit et la dette actuelle sur le crédit</h5> <hr/>"
-html_BUREAU_CURRENT_CREDIT_DEBT_DIFF_MEAN = "<h4 style='text-align: center'>BUREAU_CURRENT_CREDIT_DEBT_DIFF_MEAN</h4> <br/> <h5 style='text-align: center'>Valeur moyenne de la différence entre la limite de crédit actuelle de la carte de crédit et la dette actuelle sur le crédit</h5> <hr/>"
-html_INST_PAY_AMT_INSTALMENT_SUM = "<h4 style='text-align: center'>INST_PAY_AMT_INSTALMENT_SUM</h4> <br/> <h5 style='text-align: center'>Somme du montant de l'acompte prescrit des crédits précédents sur cet acompte</h5> <hr/>"
-html_BUREAU_CURRENT_DEBT_TO_CREDIT_RATIO_MEAN = "<h4 style='text-align: center'>BUREAU_CURRENT_DEBT_TO_CREDIT_RATIO_MEAN</h4> <br/> <h5 style='text-align: center'>Moyenne du ratio des prêts précédents sur d'autres institution de : la dette actuelle sur le crédit et la limite de crédit actuelle de la carte de crédit (valeur * 100)</h5> <hr/>"
-html_CAR_EMPLOYED_RATIO = "<h4 style='text-align: center'>CAR_EMPLOYED_RATIO</h4> <br/> <h5 style='text-align: center'>Ratio : Âge de la voiture du demandeur / Ancienneté dans l'emploi à la date de la demande (valeur * 1000)</h5> <hr/>"
-html_CODE_GENDER = "<h4 style='text-align: center'>CODE_GENDER</h4> <br/> <h5 style='text-align: center'>Sexe</h5> <hr/>"
-html_CREDIT_ANNUITY_RATIO = "<h4 style='text-align: center'>CREDIT_ANNUITY_RATIO</h4> <br/> <h5 style='text-align: center'>Ratio : montant du crédit du prêt / Annuité de prêt</h5> <hr/>"
-html_CREDIT_GOODS_RATIO = "<h4 style='text-align: center'>CREDIT_GOODS_RATIO</h4> <br/> <h5 style='text-align: center'>Ratio : Montant du crédit du prêt / prix des biens pour lesquels le prêt est accordé / Crédit est supérieur au prix des biens ? (valeur * 100)</h5> <hr/>"
-html_YEAR_BIRTH = "<h4 style='text-align: center'>YEAR_BIRTH</h4> <br/> <h5 style='text-align: center'>Âge (ans)</h5> <hr/>"
-html_YEAR_ID_PUBLISH = "<h4 style='text-align: center'>YEAR_ID_PUBLISH</h4> <br/> <h5 style='text-align: center'>Combien de jours avant la demande le client a-t-il changé la pièce d'identité avec laquelle il a demandé le prêt ? (ans)</h5> <hr/>"
-html_EXT_SOURCE_1 = "<h4 style='text-align: center'>EXT_SOURCE_1</h4> <br/> <h5 style='text-align: center'>Source externe normalisée (valeur * 100)</h5> <hr/>"
-html_EXT_SOURCE_2 = "<h4 style='text-align: center'>EXT_SOURCE_2</h4> <br/> <h5 style='text-align: center'>Source externe normalisée (valeur * 100)</h5> <hr/>"
-html_EXT_SOURCE_3 = "<h4 style='text-align: center'>EXT_SOURCE_3</h4> <br/> <h5 style='text-align: center'>Source externe normalisée (valeur * 100)</h5> <hr/>"
-html_EXT_SOURCE_MAX = "<h4 style='text-align: center'>EXT_SOURCE_MAX</h4> <br/> <h5 style='text-align: center'>Valeur maximale des 3 sources externes normalisées (EXT_SOURCE_1, EXT_SOURCE_2 et EXT_SOURCE_3) (valeur * 100)</h5> <hr/>"
-html_EXT_SOURCE_SUM = "<h4 style='text-align: center'>EXT_SOURCE_SUM</h4> <br/> <h5 style='text-align: center'>Somme des 3 sources externes normalisées (EXT_SOURCE_1, EXT_SOURCE_2 et EXT_SOURCE_3, valeur * 100)</h5> <hr/>"
-html_FLAG_OWN_CAR = "<h4 style='text-align: center'>FLAG_OWN_CAR</h4> <br/> <h5 style='text-align: center'>Indicateur si le client possède une voiture</h5> <hr/>"
-html_INST_PAY_DAYS_PAYMENT_RATIO_MAX = "<h4 style='text-align: center'>INST_PAY_DAYS_PAYMENT_RATIO_MAX</h4> <br/> <h5 style='text-align: center'>Valeur maximal dans l'historique des précédents crédits remboursés dans Home Crédit du ratio : La date à laquelle le versement du crédit précédent était censé être payé (par rapport à la date de demande du prêt actuel) \ Quand les échéances du crédit précédent ont-elles été effectivement payées (par rapport à la date de demande du prêt</h5> <hr/>"
-html_NAME_EDUCATION_TYPE_HIGHER_EDUCATION = "<h4 style='text-align: center'>NAME_EDUCATION_TYPE_HIGHER_EDUCATION</h4> <br/> <h5 style='text-align: center'>Niveau d'éducation le plus élévé</h5> <hr/>"
-html_POS_CASH_NAME_CONTRACT_STATUS_ACTIVE_SUM = "<h4 style='text-align: center'>POS_CASH_NAME_CONTRACT_STATUS_ACTIVE_SUM</h4> <br/> <h5 style='text-align: center'>Somme des contrats actifs au cours du mois</h5> <hr/>"
-html_PREV_APP_INTEREST_SHARE_MAX = "<h4 style='text-align: center'>PREV_APP_INTEREST_SHARE_MAX</h4> <br/> <h5 style='text-align: center'>La valeur maximale de tous les précédents crédit dans d'autres institution : de la durée du crédit multiplié par l'annuité du prêt moins le montant final du crédit</h5> <hr/>"
+html_BUREAU_CURRENT_CREDIT_DEBT_DIFF_MIN = "<h4 style='text-align: center'>BUREAU_CURRENT_CREDIT_DEBT_DIFF_MIN</h4> <br/> <h5 style='text-align: center'>Valeur minimale de la différence entre la limite de crédit actuelle de la carte de crédit et la dette actuelle sur le crédit</h5> <hr/>" 
+html_BUREAU_CURRENT_CREDIT_DEBT_DIFF_MEAN = "<h4 style='text-align: center'>BUREAU_CURRENT_CREDIT_DEBT_DIFF_MEAN</h4> <br/> <h5 style='text-align: center'>Valeur moyenne de la différence entre la limite de crédit actuelle de la carte de crédit et la dette actuelle sur le crédit</h5> <hr/>" 
+html_INST_PAY_AMT_INSTALMENT_SUM = "<h4 style='text-align: center'>INST_PAY_AMT_INSTALMENT_SUM</h4> <br/> <h5 style='text-align: center'>Somme du montant de l'acompte prescrit des crédits précédents sur cet acompte</h5> <hr/>" 
+html_BUREAU_CURRENT_DEBT_TO_CREDIT_RATIO_MEAN = "<h4 style='text-align: center'>BUREAU_CURRENT_DEBT_TO_CREDIT_RATIO_MEAN</h4> <br/> <h5 style='text-align: center'>Moyenne du ratio des prêts précédents sur d'autres institution de : la dette actuelle sur le crédit et la limite de crédit actuelle de la carte de crédit (valeur * 100)</h5> <hr/>" 
+html_CAR_EMPLOYED_RATIO = "<h4 style='text-align: center'>CAR_EMPLOYED_RATIO</h4> <br/> <h5 style='text-align: center'>Ratio : Âge de la voiture du demandeur / Ancienneté dans l'emploi à la date de la demande (valeur * 1000)</h5> <hr/>" 
+html_CODE_GENDER = "<h4 style='text-align: center'>CODE_GENDER</h4> <br/> <h5 style='text-align: center'>Sexe</h5> <hr/>" 
+html_CREDIT_ANNUITY_RATIO = "<h4 style='text-align: center'>CREDIT_ANNUITY_RATIO</h4> <br/> <h5 style='text-align: center'>Ratio : montant du crédit du prêt / Annuité de prêt</h5> <hr/>" 
+html_CREDIT_GOODS_RATIO = "<h4 style='text-align: center'>CREDIT_GOODS_RATIO</h4> <br/> <h5 style='text-align: center'>Ratio : Montant du crédit du prêt / prix des biens pour lesquels le prêt est accordé / Crédit est supérieur au prix des biens ? (valeur * 100)</h5> <hr/>" 
+html_YEAR_BIRTH = "<h4 style='text-align: center'>YEAR_BIRTH</h4> <br/> <h5 style='text-align: center'>Âge (ans)</h5> <hr/>" 
+html_YEAR_ID_PUBLISH = "<h4 style='text-align: center'>YEAR_ID_PUBLISH</h4> <br/> <h5 style='text-align: center'>Combien de jours avant la demande le client a-t-il changé la pièce d'identité avec laquelle il a demandé le prêt ? (ans)</h5> <hr/>" 
+html_EXT_SOURCE_1 = "<h4 style='text-align: center'>EXT_SOURCE_1</h4> <br/> <h5 style='text-align: center'>Source externe normalisée (valeur * 100)</h5> <hr/>" 
+html_EXT_SOURCE_2 = "<h4 style='text-align: center'>EXT_SOURCE_2</h4> <br/> <h5 style='text-align: center'>Source externe normalisée (valeur * 100)</h5> <hr/>" 
+html_EXT_SOURCE_3 = "<h4 style='text-align: center'>EXT_SOURCE_3</h4> <br/> <h5 style='text-align: center'>Source externe normalisée (valeur * 100)</h5> <hr/>" 
+html_EXT_SOURCE_MAX = "<h4 style='text-align: center'>EXT_SOURCE_MAX</h4> <br/> <h5 style='text-align: center'>Valeur maximale des 3 sources externes normalisées (EXT_SOURCE_1, EXT_SOURCE_2 et EXT_SOURCE_3) (valeur * 100)</h5> <hr/>" 
+html_EXT_SOURCE_SUM = "<h4 style='text-align: center'>EXT_SOURCE_SUM</h4> <br/> <h5 style='text-align: center'>Somme des 3 sources externes normalisées (EXT_SOURCE_1, EXT_SOURCE_2 et EXT_SOURCE_3, valeur * 100)</h5> <hr/>" 
+html_FLAG_OWN_CAR = "<h4 style='text-align: center'>FLAG_OWN_CAR</h4> <br/> <h5 style='text-align: center'>Indicateur si le client possède une voiture</h5> <hr/>" 
+html_INST_PAY_DAYS_PAYMENT_RATIO_MAX = "<h4 style='text-align: center'>INST_PAY_DAYS_PAYMENT_RATIO_MAX</h4> <br/> <h5 style='text-align: center'>Valeur maximal dans l'historique des précédents crédits remboursés dans Home Crédit du ratio : La date à laquelle le versement du crédit précédent était censé être payé (par rapport à la date de demande du prêt actuel) \ Quand les échéances du crédit précédent ont-elles été effectivement payées (par rapport à la date de demande du prêt</h5> <hr/>" 
+html_NAME_EDUCATION_TYPE_HIGHER_EDUCATION = "<h4 style='text-align: center'>NAME_EDUCATION_TYPE_HIGHER_EDUCATION</h4> <br/> <h5 style='text-align: center'>Niveau d'éducation le plus élévé</h5> <hr/>" 
+html_POS_CASH_NAME_CONTRACT_STATUS_ACTIVE_SUM = "<h4 style='text-align: center'>POS_CASH_NAME_CONTRACT_STATUS_ACTIVE_SUM</h4> <br/> <h5 style='text-align: center'>Somme des contrats actifs au cours du mois</h5> <hr/>" 
+html_PREV_APP_INTEREST_SHARE_MAX = "<h4 style='text-align: center'>PREV_APP_INTEREST_SHARE_MAX</h4> <br/> <h5 style='text-align: center'>La valeur maximale de tous les précédents crédit dans d'autres institution : de la durée du crédit multiplié par l'annuité du prêt moins le montant final du crédit</h5> <hr/>" 
 
 # ====================================================================
 # HEADER - TITRE
@@ -121,7 +121,7 @@ html_header="""
         <meta name="description" content="Application de Crédit Score - dashboard">
         <meta name="author" content="Davy Bayet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+    </head>             
     <h1 style="font-size:300%; color:Crimson; font-family:Arial"> Prêt à dépenser <br>
         <h2 style="color:Gray; font-family:Georgia"> DASHBOARD</h2>
         <hr style= "  display: block;
@@ -163,19 +163,19 @@ st.markdown(f""" <style>
 # @st.cache(persist = True)
 def load():
     with st.spinner('Import des données'):
-
+        
         # Import du dataframe des informations des traits stricts du client
         with open(FILE_CLIENT_INFO, 'rb') as df_info_client:
             df_info_client = pickle.load(df_info_client)
-
+            
         # Import du dataframe des informations sur le prêt du client
         with open(FILE_CLIENT_PRET, 'rb') as df_pret_client:
             df_pret_client = pickle.load(df_pret_client)
-
+            
         # Import du dataframe des informations des traits stricts des voisins
         with open(FILE_VOISINS_INFO, 'rb') as df_info_voisins:
             df_info_voisins = pickle.load(df_info_voisins)
-
+            
         # Import du dataframe des informations sur le prêt des voisins
         with open(FILE_VOISIN_PRET, 'rb') as df_pret_voisins:
             df_pret_voisins = pickle.load(df_pret_voisins)
@@ -203,14 +203,14 @@ def load():
         # Import du dataframe du test set brut original
         with open(FILE_SHAP_VALUES, 'rb') as shap_values:
             shap_values = pickle.load(shap_values)
-
+            
     # Import du meilleur modèle lgbm entrainé
     with st.spinner('Import du modèle'):
-
+        
         # Import du meilleur modèle lgbm entrainé
         with open(FILE_BEST_MODELE, 'rb') as model_lgbm:
             best_model = pickle.load(model_lgbm)
-
+         
     return df_info_client, df_pret_client, df_info_voisins, df_pret_voisins, \
         df_dashboard, df_voisin_train_agg, df_all_train_agg, test_set, \
             application_test, shap_values, best_model
@@ -305,7 +305,7 @@ pourc_def_voisins_test = int(np.rint(df_dashboard[
 fig_jauge = go.Figure(go.Indicator(
     mode = 'gauge+number+delta',
     # Score du client en % df_dashboard['SCORE_CLIENT_%']
-    value = score_client,
+    value = score_client,  
     domain = {'x': [0, 1], 'y': [0, 1]},
     title = {'text': 'Crédit score du client', 'font': {'size': 24}},
     # Score des 10 voisins test set
@@ -360,11 +360,11 @@ with st.container():
         else :
             score_text = 'Crédit score : BAS'
             st.error(score_text)
-        st.write("")
+        st.write("")    
         st.markdown(f'Crédit score moyen des 10 clients similaires : **{score_moy_voisins_test}**')
         st.markdown(f'**{pourc_def_voisins_train}**% de clients voisins réellement défaillants dans l\'historique')
         st.markdown(f'**{pourc_def_voisins_test}**% de clients voisins défaillants prédits pour les nouveaux clients')
-
+    
 # ====================================================================
 # SIDEBAR
 # ====================================================================
@@ -377,7 +377,7 @@ df_client_test = test_set[test_set['SK_ID_CURR'] == client_id]
 
 # Les informations pré-procédées du client courant
 df_client_courant = df_dashboard[df_dashboard['SK_ID_CURR'] == client_id]
-
+                        
 # --------------------------------------------------------------------
 # LOGO
 # --------------------------------------------------------------------
@@ -403,14 +403,14 @@ def all_infos_clients():
             </div>
         </div>
         """
-
-    # ====================== GRAPHIQUES COMPARANT CLIENT COURANT / CLIENTS SIMILAIRES ===========================
-    if st.sidebar.checkbox("Voir toutes infos clients ?"):
-
+    
+    # ====================== GRAPHIQUES COMPARANT CLIENT COURANT / CLIENTS SIMILAIRES =========================== 
+    if st.sidebar.checkbox("Voir toutes infos clients ?"):     
+        
         st.markdown(html_all_infos_clients, unsafe_allow_html=True)
 
-        with st.spinner('**Affiche toutes les informations sur le client courant...**'):
-
+        with st.spinner('**Affiche toutes les informations sur le client courant...**'):                 
+                       
             with st.expander('Toutes les informations du client courant',
                              expanded=True):
                 st.dataframe(df_client_origin)
@@ -418,9 +418,9 @@ def all_infos_clients():
 
 st.sidebar.subheader('Plus infos')
 all_infos_clients()
-
+                
 # --------------------------------------------------------------------
-# CLIENTS SIMILAIRES
+# CLIENTS SIMILAIRES 
 # --------------------------------------------------------------------
 def infos_clients_similaires():
     ''' Affiche les informations sur les clients similaires :
@@ -440,16 +440,16 @@ def infos_clients_similaires():
         </div>
         """
     titre = True
-
-    # ====================== GRAPHIQUES COMPARANT CLIENT COURANT / CLIENTS SIMILAIRES ===========================
-    if st.sidebar.checkbox("Voir graphiques comparatifs ?"):
-
+    
+    # ====================== GRAPHIQUES COMPARANT CLIENT COURANT / CLIENTS SIMILAIRES =========================== 
+    if st.sidebar.checkbox("Voir graphiques comparatifs ?"):     
+        
         if titre:
             st.markdown(html_clients_similaires, unsafe_allow_html=True)
             titre = False
-
-        with st.spinner('**Affiche les graphiques comparant le client courant et les clients similaires...**'):
-
+        
+        with st.spinner('**Affiche les graphiques comparant le client courant et les clients similaires...**'):                 
+                       
             with st.expander('Comparaison variables impactantes client courant/moyennes des clients similaires',
                              expanded=True):
                 with st.container():
@@ -487,7 +487,7 @@ def infos_clients_similaires():
                     # y
                     y_feat_client_gp1 = df_feat_client_gp1.values[0].tolist()
                     y_feat_client_gp2 = df_feat_client_gp2.values[0].tolist()
-
+                    
                     # ===================== Valeurs moyennes des features importances pour les 10 voisins =======================
                     df_moy_feat_voisins = df_client[['ID_CLIENT', 'AMT_ANNUITY_MEAN',
                                'BUREAU_CURRENT_CREDIT_DEBT_DIFF_MIN_MEAN',
@@ -513,7 +513,7 @@ def infos_clients_similaires():
                     # y
                     y_moy_feat_voisins_gp3 = df_moy_feat_voisins_gp3.values[0].tolist()
                     y_moy_feat_voisins_gp4 = df_moy_feat_voisins_gp4.values[0].tolist()
-
+                    
                     # ===================== Valeurs moyennes de tous les clients non-défaillants/défaillants du train sets =======================
                     df_all_train = df_all_train_agg[['TARGET', 'AMT_ANNUITY_MEAN',
                                'BUREAU_CURRENT_CREDIT_DEBT_DIFF_MIN_MEAN',
@@ -548,43 +548,43 @@ def infos_clients_similaires():
 
                     # Légende des courbes
                     st.image(lineplot_legende)
-
+                                                  
                     col1, col2 = st.columns([1, 1.5])
                     with col1:
                         # Lineplot de comparaison des features importances client courant/voisins/all ================
                         plt.figure(figsize=(6, 6))
                         plt.plot(x_gp1, y_feat_client_gp1, color='Orange')
-                        plt.plot(x_gp1, y_moy_feat_voisins_gp3, color='Green')
+                        plt.plot(x_gp1, y_moy_feat_voisins_gp3, color='SteelBlue')
                         plt.plot(x_gp1, y_all_train_nondef_gp3, color='Green')
                         plt.plot(x_gp1, y_all_train_def_gp3, color='Crimson')
                         plt.xticks(rotation=90)
                         st.set_option('deprecation.showPyplotGlobalUse', False)
                         st.pyplot()
-                    with col2:
+                    with col2: 
                         # Lineplot de comparaison des features importances client courant/voisins/all ================
                         plt.figure(figsize=(8, 5))
                         plt.plot(x_gp2, y_feat_client_gp2, color='Orange')
-                        plt.plot(x_gp2, y_moy_feat_voisins_gp4, color='Green')
+                        plt.plot(x_gp2, y_moy_feat_voisins_gp4, color='SteelBlue')
                         plt.plot(x_gp2, y_all_train_nondef_gp4, color='Green')
                         plt.plot(x_gp2, y_all_train_def_gp4, color='Crimson')
                         plt.xticks(rotation=90)
                         st.set_option('deprecation.showPyplotGlobalUse', False)
                         st.pyplot()
-
-                    with st.container():
-
-                        vars_select = ['AMT_ANNUITY',
+                        
+                    with st.container(): 
+                        
+                        vars_select = ['AMT_ANNUITY', 
                                        'BUREAU_CURRENT_CREDIT_DEBT_DIFF_MIN',
                                        'BUREAU_CURRENT_CREDIT_DEBT_DIFF_MEAN',
                                        'BUREAU_CURRENT_DEBT_TO_CREDIT_RATIO_MEAN',
-                                       'CAR_EMPLOYED_RATIO',
+                                       'CAR_EMPLOYED_RATIO', 
                                        'CODE_GENDER',
                                        'CREDIT_ANNUITY_RATIO',
                                        'CREDIT_GOODS_RATIO',
-                                       'EXT_SOURCE_1',
-                                       'EXT_SOURCE_2',
+                                       'EXT_SOURCE_1', 
+                                       'EXT_SOURCE_2', 
                                        'EXT_SOURCE_3',
-                                       'EXT_SOURCE_MAX',
+                                       'EXT_SOURCE_MAX', 
                                        'EXT_SOURCE_SUM',
                                        'FLAG_OWN_CAR',
                                        'INST_PAY_AMT_INSTALMENT_SUM',
@@ -592,7 +592,7 @@ def infos_clients_similaires():
                                        'NAME_EDUCATION_TYPE_HIGHER_EDUCATION',
                                        'POS_CASH_NAME_CONTRACT_STATUS_ACTIVE_SUM',
                                        'PREV_APP_INTEREST_SHARE_MAX',
-                                       'YEAR_BIRTH',
+                                       'YEAR_BIRTH', 
                                        'YEAR_ID_PUBLISH']
 
                         feat_imp_to_show = st.multiselect("Feature(s) importance(s) à visualiser : ",
@@ -604,7 +604,7 @@ def infos_clients_similaires():
                         # ==============================================================
 
                         if 'AMT_ANNUITY' in feat_imp_to_show:
-
+                            
                             with st.spinner('**Chargement du graphique comparatif AMT_ANNUITY...**'):
 
                                 amt_min = int(df_client.AMT_ANNUITY_MIN.values)
@@ -616,9 +616,9 @@ def infos_clients_similaires():
                                     'AMT_ANNUITY'].values)
                                 amt_axis_min = min(amt_min, amt_client)
                                 amt_axis_max = max(amt_max, amt_client)
-
+                                
                                 fig_amt = go.Figure()
-
+                                
                                 fig_amt.add_trace(go.Indicator(
                                     mode = "number+gauge+delta",
                                     value = amt_client,
@@ -644,10 +644,10 @@ def infos_clients_similaires():
                                              'line': {'color': 'DarkSlateGray', 'width': 2}},
                                             {'range': [amt_q75, amt_max], 'color': '#de3a5b'}],
                                         'bar': {'color': 'black'}}))
-
+                                
                                 fig_amt.update_layout(height=200,
                                                       margin={'t':0, 'b':0, 'l':0})
-
+                                
                                 st.markdown(html_AMT_ANNUITY, unsafe_allow_html=True)
 
                                 # ==================== Go Indicator bullets ==============================================
@@ -668,7 +668,7 @@ def infos_clients_similaires():
                                                        markersize=16, label='Position du client')
                                 plt.legend(handles=[client], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
                                 st.pyplot()
-
+                                    
                                 # ==================== DistPlot ==========================================================
                                 # Non-défaillants
                                 sns.distplot(df_dashboard['AMT_ANNUITY'][df_dashboard[
@@ -685,7 +685,7 @@ def infos_clients_similaires():
                                 # Position du client
                                 plt.axvline(x=amt_client, color='orange', label='Position du client')
                                 plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
-                                st.pyplot()
+                                st.pyplot()                                  
 
 
                         # ==============================================================
@@ -694,7 +694,7 @@ def infos_clients_similaires():
                         # de la carte de crédit et la dette actuelle sur le crédit
                         # ==============================================================
                         if 'BUREAU_CURRENT_CREDIT_DEBT_DIFF_MIN' in feat_imp_to_show:
-
+                                
                             with st.spinner('**Chargement du graphique comparatif BUREAU_CURRENT_CREDIT_DEBT_DIFF_MIN...**'):
 
                                 bccddm_min = int(df_client.BUREAU_CURRENT_CREDIT_DEBT_DIFF_MIN_MIN.values)
@@ -706,9 +706,9 @@ def infos_clients_similaires():
                                     'BUREAU_CURRENT_CREDIT_DEBT_DIFF_MIN'].values)
                                 bccddm_axis_min = min(bccddm_min, bccddm_client)
                                 bccddm_axis_max = max(bccddm_max, bccddm_client)
-
+                                
                                 fig_bccdm = go.Figure()
-
+                                
                                 fig_bccdm.add_trace(go.Indicator(
                                     mode = "number+gauge+delta",
                                     value = bccddm_client,
@@ -734,15 +734,15 @@ def infos_clients_similaires():
                                              'line': {'color': 'DarkSlateGray', 'width': 2}},
                                             {'range': [bccddm_q75, bccddm_max], 'color': '#de3a5b'}],
                                         'bar': {'color': 'black'}}))
-
+                                
                                 fig_bccdm.update_layout(height=200,
                                                         margin={'t':0, 'b':0, 'l':0})
-
+                                
                                 st.markdown(html_BUREAU_CURRENT_CREDIT_DEBT_DIFF_MIN, unsafe_allow_html=True)
 
                                 # Go Indicator bullets
-                                st.plotly_chart(fig_bccdm)
-
+                                st.plotly_chart(fig_bccdm)           
+                                
                                 # ==================== ViolinPlot ========================================================
                                 sns.violinplot(x='PRED_CLASSE_CLIENT', y='BUREAU_CURRENT_CREDIT_DEBT_DIFF_MIN',
                                                data=df_dashboard,
@@ -758,7 +758,7 @@ def infos_clients_similaires():
                                                        markersize=16, label='Position du client')
                                 plt.legend(handles=[client], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
                                 st.pyplot()
-
+                                    
                                 # ==================== DistPlot ==========================================================
                                 # Non-défaillants
                                 sns.distplot(df_dashboard['BUREAU_CURRENT_CREDIT_DEBT_DIFF_MIN'][df_dashboard[
@@ -775,16 +775,16 @@ def infos_clients_similaires():
                                 # Position du client
                                 plt.axvline(x=bccddm_client, color='orange', label='Position du client')
                                 plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
-                                st.pyplot()
+                                st.pyplot()                                  
 
-
+                                
                         # ==============================================================
                         # Variable BUREAU_CURRENT_CREDIT_DEBT_DIFF_MEAN
                         # Valeur moyenne de la différence entre la limite de crédit actuelle
                         # de la carte de crédit et la dette actuelle sur le crédit
                         # ==============================================================
                         if 'BUREAU_CURRENT_CREDIT_DEBT_DIFF_MEAN' in feat_imp_to_show:
-
+                                
                             with st.spinner('**Chargement du graphique comparatif BUREAU_CURRENT_CREDIT_DEBT_DIFF_MEAN...**'):
 
                                 bccddmean_min = int(df_client.BUREAU_CURRENT_CREDIT_DEBT_DIFF_MEAN_MIN.values)
@@ -796,9 +796,9 @@ def infos_clients_similaires():
                                     'BUREAU_CURRENT_CREDIT_DEBT_DIFF_MEAN'].values)
                                 bccddmean_axis_min = min(bccddmean_min, bccddmean_client)
                                 bccddmean_axis_max = max(bccddmean_max, bccddmean_client)
-
+                                
                                 fig_bccddmean = go.Figure()
-
+                                
                                 fig_bccddmean.add_trace(go.Indicator(
                                     mode = "number+gauge+delta",
                                     value = bccddmean_client,
@@ -827,12 +827,12 @@ def infos_clients_similaires():
 
                                 fig_bccddmean.update_layout(height=200,
                                                             margin={'t':0, 'b':0, 'l':0})
-
+                                
                                 st.markdown(html_BUREAU_CURRENT_CREDIT_DEBT_DIFF_MEAN, unsafe_allow_html=True)
 
                                 # Go Indicator bullets
-                                st.plotly_chart(fig_bccddmean)
-
+                                st.plotly_chart(fig_bccddmean) 
+                                
                                 # ==================== ViolinPlot ========================================================
                                 sns.violinplot(x='PRED_CLASSE_CLIENT', y='BUREAU_CURRENT_CREDIT_DEBT_DIFF_MEAN',
                                                data=df_dashboard,
@@ -848,7 +848,7 @@ def infos_clients_similaires():
                                                        markersize=16, label='Position du client')
                                 plt.legend(handles=[client], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
                                 st.pyplot()
-
+                                    
                                 # ==================== DistPlot ==========================================================
                                 # Non-défaillants
                                 sns.distplot(df_dashboard['BUREAU_CURRENT_CREDIT_DEBT_DIFF_MEAN'][df_dashboard[
@@ -866,8 +866,8 @@ def infos_clients_similaires():
                                 plt.axvline(x=bccddmean_client, color='orange', label='Position du client')
                                 plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
                                 st.pyplot()
-
-
+                                
+                                
                         # ==============================================================
                         # Variable BUREAU_CURRENT_DEBT_TO_CREDIT_RATIO_MEAN
                         # Moyenne de du ratio des prêts précédents sur d'autres institution de :
@@ -875,9 +875,9 @@ def infos_clients_similaires():
                         # carte de crédit
                         # ==============================================================
                         if 'BUREAU_CURRENT_DEBT_TO_CREDIT_RATIO_MEAN' in feat_imp_to_show:
-
+                                
                             with st.spinner('**Chargement du graphique comparatif BUREAU_CURRENT_DEBT_TO_CREDIT_RATIO_MEAN...**'):
-
+                                
                                 bcdtcrm_min = int(df_client.BUREAU_CURRENT_DEBT_TO_CREDIT_RATIO_MEAN_MIN.values*100)
                                 bcdtcrm_q25 = int(df_client.BUREAU_CURRENT_DEBT_TO_CREDIT_RATIO_MEAN_Q25.values*100)
                                 bcdtcrm_mean = int(df_client.BUREAU_CURRENT_DEBT_TO_CREDIT_RATIO_MEAN_MEAN.values*100)
@@ -887,15 +887,15 @@ def infos_clients_similaires():
                                     'BUREAU_CURRENT_DEBT_TO_CREDIT_RATIO_MEAN'].values*100)
                                 bcdtcrm_axis_min = min(bcdtcrm_min, bcdtcrm_client)
                                 bcdtcrm_axis_max = max(bcdtcrm_max, bcdtcrm_client)
-
+                                
                                 cond = bcdtcrm_client == bcdtcrm_min and bcdtcrm_min == bcdtcrm_q25 \
                                     and bcdtcrm_q25 == bcdtcrm_mean and bcdtcrm_mean == bcdtcrm_q75 \
                                     and bcdtcrm_q75 == bcdtcrm_max
-
+                                
                                 if not cond:
-
+                                                                                                    
                                     fig_bcdtcrm = go.Figure()
-
+                                        
                                     fig_bcdtcrm.add_trace(go.Indicator(
                                        mode = "number+gauge+delta",
                                        value = bcdtcrm_client,
@@ -921,19 +921,19 @@ def infos_clients_similaires():
                                                 'line': {'color': 'DarkSlateGray', 'width': 2}},
                                                {'range': [bcdtcrm_q75, bcdtcrm_max], 'color': '#de3a5b'}],
                                            'bar': {'color': 'black'}}))
-
+        
                                     fig_bcdtcrm.update_layout(height=200,
                                                                margin={'t':0, 'b':0, 'l':0})
                                     st.markdown(html_BUREAU_CURRENT_DEBT_TO_CREDIT_RATIO_MEAN, unsafe_allow_html=True)
-
+        
                                     # Go Indicator bullets
-                                    st.plotly_chart(fig_bcdtcrm)
-
+                                    st.plotly_chart(fig_bcdtcrm) 
+                                     
                                     # ==================== ViolinPlot ========================================================
                                     sns.violinplot(x='PRED_CLASSE_CLIENT', y='BUREAU_CURRENT_DEBT_TO_CREDIT_RATIO_MEAN',
                                                    data=df_dashboard,
                                                    palette=['Green', 'Crimson'])
-
+    
                                     plt.plot(df_client_courant['PRED_CLASSE_CLIENT'],
                                              bcdtcrm_client,
                                              color="orange",
@@ -944,7 +944,7 @@ def infos_clients_similaires():
                                                            markersize=16, label='Position du client')
                                     plt.legend(handles=[client], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
                                     st.pyplot()
-
+                                        
                                     # ==================== DistPlot ==========================================================
                                     # Non-défaillants
                                     sns.distplot(df_dashboard['BUREAU_CURRENT_DEBT_TO_CREDIT_RATIO_MEAN'][df_dashboard[
@@ -962,10 +962,10 @@ def infos_clients_similaires():
                                     plt.axvline(x=bcdtcrm_client, color='orange', label='Position du client')
                                     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
                                     st.pyplot()
-
+                                     
                                 else:
-
-                                    st.markdown(html_BUREAU_CURRENT_DEBT_TO_CREDIT_RATIO_MEAN, unsafe_allow_html=True)
+                                    
+                                    st.markdown(html_BUREAU_CURRENT_DEBT_TO_CREDIT_RATIO_MEAN, unsafe_allow_html=True)                                   
                                     st.write("Toutes les valeurs sont identiques")
 
 
@@ -975,9 +975,9 @@ def infos_clients_similaires():
                         # date de la demande
                         # ==============================================================
                         if 'CAR_EMPLOYED_RATIO' in feat_imp_to_show:
-
+                                
                             with st.spinner('**Chargement du graphique comparatif CAR_EMPLOYED_RATIO...**'):
-
+                                
                                 cer_max = int(df_client.CAR_EMPLOYED_RATIO_MIN.values*1000)
                                 cer_q75 = int(df_client.CAR_EMPLOYED_RATIO_Q25.values*1000)
                                 cer_mean = int(df_client.CAR_EMPLOYED_RATIO_MEAN.values*1000)
@@ -987,14 +987,14 @@ def infos_clients_similaires():
                                     'CAR_EMPLOYED_RATIO'].values*1000)
                                 cer_axis_min = min(cer_min, cer_client)
                                 cer_axis_max = max(cer_max, cer_client)
-
+                                
                                 cond = cer_client == cer_min and cer_min == cer_q25 and \
                                     cer_q25 == cer_mean and cer_mean == cer_q75 and \
                                     cer_q75 == cer_max
-
+                                
                                 if not cond:
                                     fig_cer = go.Figure()
-
+                                
                                     fig_cer.add_trace(go.Indicator(
                                         mode = "number+gauge+delta",
                                         value = cer_client,
@@ -1020,20 +1020,20 @@ def infos_clients_similaires():
                                                  'line': {'color': 'DarkSlateGray', 'width': 2}},
                                                 {'range': [cer_q75, cer_max], 'color': '#de3a5b'}],
                                             'bar': {'color': 'black'}}))
-
+                                
                                     fig_cer.update_layout(height=200,
                                                           margin={'t':0, 'b':0, 'l':0})
-
+  
                                     st.markdown(html_CAR_EMPLOYED_RATIO, unsafe_allow_html=True)
-
+        
                                     # Go Indicator bullets
-                                    st.plotly_chart(fig_cer)
+                                    st.plotly_chart(fig_cer) 
 
                                     # ==================== ViolinPlot ========================================================
                                     sns.violinplot(x='PRED_CLASSE_CLIENT', y='CAR_EMPLOYED_RATIO',
                                                    data=df_dashboard,
                                                    palette=['Green', 'Crimson'])
-
+    
                                     plt.plot(df_client_courant['PRED_CLASSE_CLIENT'],
                                              cer_client,
                                              color="orange",
@@ -1044,7 +1044,7 @@ def infos_clients_similaires():
                                                            markersize=16, label='Position du client')
                                     plt.legend(handles=[client], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
                                     st.pyplot()
-
+                                        
                                     # ==================== DistPlot ==========================================================
                                     # Non-défaillants
                                     sns.distplot(df_dashboard['CAR_EMPLOYED_RATIO'][df_dashboard[
@@ -1062,21 +1062,21 @@ def infos_clients_similaires():
                                     plt.axvline(x=cer_client, color='orange', label='Position du client')
                                     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
                                     st.pyplot()
-
+                                    
                                 else:
-
-                                    st.markdown(html_CAR_EMPLOYED_RATIO, unsafe_allow_html=True)
-                                    st.write("Toutes les valeurs sont identiques")
+                                    
+                                    st.markdown(html_CAR_EMPLOYED_RATIO, unsafe_allow_html=True)                                   
+                                    st.write("Toutes les valeurs sont identiques")                                   
 
 
                         # ==============================================================
                         # Variable CREDIT_ANNUITY_RATIO
-                        # Ratio : montant du crédit du prêt / Annuité de prêt
+                        # Ratio : montant du crédit du prêt / Annuité de prêt 
                         # ==============================================================
                         if 'CREDIT_ANNUITY_RATIO' in feat_imp_to_show:
-
+                                
                             with st.spinner('**Chargement du graphique comparatif CREDIT_ANNUITY_RATIO...**'):
-
+                                
                                 car_min = int(df_client.CREDIT_ANNUITY_RATIO_MIN.values)
                                 car_q25 = int(df_client.CREDIT_ANNUITY_RATIO_Q25.values)
                                 car_mean = int(df_client.CREDIT_ANNUITY_RATIO_MEAN.values)
@@ -1085,15 +1085,15 @@ def infos_clients_similaires():
                                 car_client = int(df_dashboard[df_dashboard['SK_ID_CURR'] == client_id][
                                     'CREDIT_ANNUITY_RATIO'].values)
                                 car_axis_min = min(car_min, car_client)
-                                car_axis_max = max(car_max, car_client)
-
+                                car_axis_max = max(car_max, car_client)                                
+                                
                                 cond = car_client == car_min and car_min == car_q25 and \
                                     car_q25 == car_mean and car_mean == car_q75 \
                                     and car_q75 == car_max
-
+                                
                                 if not cond:
                                     fig_car = go.Figure()
-
+                                
                                     fig_car.add_trace(go.Indicator(
                                         mode = "number+gauge+delta",
                                         value = car_client,
@@ -1122,17 +1122,17 @@ def infos_clients_similaires():
 
                                     fig_car.update_layout(height=200,
                                                           margin={'t':0, 'b':0, 'l':0})
-
+  
                                     st.markdown(html_CREDIT_ANNUITY_RATIO, unsafe_allow_html=True)
-
+        
                                     # Go Indicator bullets
-                                    st.plotly_chart(fig_car)
-
+                                    st.plotly_chart(fig_car) 
+                                    
                                     # ==================== ViolinPlot ========================================================
                                     sns.violinplot(x='PRED_CLASSE_CLIENT', y='CREDIT_ANNUITY_RATIO',
                                                    data=df_dashboard,
                                                    palette=['Green', 'Crimson'])
-
+    
                                     plt.plot(df_client_courant['PRED_CLASSE_CLIENT'],
                                              car_client,
                                              color="orange",
@@ -1143,7 +1143,7 @@ def infos_clients_similaires():
                                                            markersize=16, label='Position du client')
                                     plt.legend(handles=[client], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
                                     st.pyplot()
-
+                                        
                                     # ==================== DistPlot ==========================================================
                                     # Non-défaillants
                                     sns.distplot(df_dashboard['CREDIT_ANNUITY_RATIO'][df_dashboard[
@@ -1161,22 +1161,22 @@ def infos_clients_similaires():
                                     plt.axvline(x=car_client, color='orange', label='Position du client')
                                     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
                                     st.pyplot()
-
+                                    
                                 else:
-
-                                    st.markdown(html_CREDIT_ANNUITY_RATIO, unsafe_allow_html=True)
-                                    st.write("Toutes les valeurs sont identiques")
+                                    
+                                    st.markdown(html_CREDIT_ANNUITY_RATIO, unsafe_allow_html=True)                                   
+                                    st.write("Toutes les valeurs sont identiques")                                   
 
 
                         # ==============================================================
                         # Variable CREDIT_GOODS_RATIO
                         # Ratio : Montant du crédit du prêt / prix des biens pour lesquels le prêt
-                        # est accordé / Crédit est supérieur au prix des biens ?
+                        # est accordé / Crédit est supérieur au prix des biens ?  
                         # ==============================================================
                         if 'CREDIT_GOODS_RATIO' in feat_imp_to_show:
-
+                                
                             with st.spinner('**Chargement du graphique comparatif CREDIT_GOODS_RATIO...**'):
-
+                                
                                 cgr_min = int(df_client.CREDIT_GOODS_RATIO_MIN.values * 100)
                                 cgr_q25 = int(df_client.CREDIT_GOODS_RATIO_Q25.values * 100)
                                 cgr_mean = int(df_client.CREDIT_GOODS_RATIO_MEAN.values * 100)
@@ -1185,15 +1185,15 @@ def infos_clients_similaires():
                                 cgr_client = int(df_dashboard[df_dashboard['SK_ID_CURR'] == client_id][
                                     'CREDIT_GOODS_RATIO'].values * 100)
                                 cgr_axis_min = min(cgr_min, cgr_client)
-                                cgr_axis_max = max(cgr_max, cgr_client)
-
+                                cgr_axis_max = max(cgr_max, cgr_client)                                
+                                
                                 cond = cgr_client == cgr_min and cgr_min == cgr_q25 \
                                     and cgr_q25 == cgr_mean and cgr_mean == cgr_q75 \
                                     and cgr_q75 == cgr_max
-
+                                
                                 if not cond:
                                     fig_cgr = go.Figure()
-
+                                
                                     fig_cgr.add_trace(go.Indicator(
                                         mode = "number+gauge+delta",
                                         value = cgr_client,
@@ -1222,17 +1222,17 @@ def infos_clients_similaires():
 
                                     fig_cgr.update_layout(height=200,
                                                           margin={'t':0, 'b':0, 'l':0})
-
+  
                                     st.markdown(html_CREDIT_GOODS_RATIO, unsafe_allow_html=True)
-
+        
                                     # Go Indicator bullets
-                                    st.plotly_chart(fig_cgr)
-
+                                    st.plotly_chart(fig_cgr) 
+                                    
                                     # ==================== ViolinPlot ========================================================
                                     sns.violinplot(x='PRED_CLASSE_CLIENT', y='CREDIT_GOODS_RATIO',
                                                    data=df_dashboard,
                                                    palette=['Green', 'Crimson'])
-
+    
                                     plt.plot(df_client_courant['PRED_CLASSE_CLIENT'],
                                              cgr_client,
                                              color="orange",
@@ -1243,7 +1243,7 @@ def infos_clients_similaires():
                                                            markersize=16, label='Position du client')
                                     plt.legend(handles=[client], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
                                     st.pyplot()
-
+                                        
                                     # ==================== DistPlot ==========================================================
                                     # Non-défaillants
                                     sns.distplot(df_dashboard['CREDIT_GOODS_RATIO'][df_dashboard[
@@ -1260,22 +1260,22 @@ def infos_clients_similaires():
                                     # Position du client
                                     plt.axvline(x=cgr_client, color='orange', label='Position du client')
                                     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
-                                    st.pyplot()
-
+                                    st.pyplot()                                   
+                                    
                                 else:
-
-                                    st.markdown(html_CREDIT_GOODS_RATIO, unsafe_allow_html=True)
-                                    st.write("Toutes les valeurs sont identiques")
+                                    
+                                    st.markdown(html_CREDIT_GOODS_RATIO, unsafe_allow_html=True)                                   
+                                    st.write("Toutes les valeurs sont identiques") 
 
 
                         # ==============================================================
                         # Variable YEAR_BIRTH
-                        # Âge (ans)
+                        # Âge (ans) 
                         # ==============================================================
                         if 'YEAR_BIRTH' in feat_imp_to_show:
-
+                                
                             with st.spinner('**Chargement du graphique comparatif YEAR_BIRTH...**'):
-
+                                
                                 age_max = int(-df_client.DAYS_BIRTH_MIN.values/365)
                                 age_q75 = int(-df_client.DAYS_BIRTH_Q25.values/365)
                                 age_mean = int(-df_client.DAYS_BIRTH_MEAN.values/365)
@@ -1284,14 +1284,14 @@ def infos_clients_similaires():
                                 age_client = int(-df_dashboard[df_dashboard['SK_ID_CURR'] == client_id][
                                     'DAYS_BIRTH'].values/365)
                                 age_axis_min = min(age_min, age_client)
-                                age_axis_max = max(age_max, age_client)
-
+                                age_axis_max = max(age_max, age_client)   
+                                
                                 cond = age_client == age_min and age_min == age_q25 and \
                                     age_q25 == age_mean and age_mean == age_q75 and age_q75 == age_max
-
+                                
                                 if not cond:
                                     fig_age = go.Figure()
-
+                                
                                     fig_age.add_trace(go.Indicator(
                                         mode = "number+gauge+delta",
                                         value = age_client,
@@ -1320,17 +1320,17 @@ def infos_clients_similaires():
 
                                     fig_age.update_layout(height=200,
                                                            margin={'t':0, 'b':0, 'l':0})
-
+  
                                     st.markdown(html_YEAR_BIRTH, unsafe_allow_html=True)
-
+        
                                     # Go Indicator bullets
-                                    st.plotly_chart(fig_age)
-
+                                    st.plotly_chart(fig_age) 
+                                    
                                     # ==================== ViolinPlot ========================================================
                                     sns.violinplot(x='PRED_CLASSE_CLIENT', y='YEAR_BIRTH',
                                                    data=df_dashboard,
                                                    palette=['Green', 'Crimson'])
-
+    
                                     plt.plot(df_client_courant['PRED_CLASSE_CLIENT'],
                                              age_client,
                                              color="orange",
@@ -1341,7 +1341,7 @@ def infos_clients_similaires():
                                                            markersize=16, label='Position du client')
                                     plt.legend(handles=[client], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
                                     st.pyplot()
-
+                                        
                                     # ==================== DistPlot ==========================================================
                                     # Non-défaillants
                                     sns.distplot(df_dashboard['YEAR_BIRTH'][df_dashboard[
@@ -1358,12 +1358,12 @@ def infos_clients_similaires():
                                     # Position du client
                                     plt.axvline(x=age_client, color='orange', label='Position du client')
                                     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
-                                    st.pyplot()
-
+                                    st.pyplot()                                   
+                                                                        
                                 else:
-
-                                    st.markdown(html_YEAR_BIRTH, unsafe_allow_html=True)
-                                    st.write("Toutes les valeurs sont identiques")
+                                    
+                                    st.markdown(html_YEAR_BIRTH, unsafe_allow_html=True)                                   
+                                    st.write("Toutes les valeurs sont identiques") 
 
 
                         # ==============================================================
@@ -1372,9 +1372,9 @@ def infos_clients_similaires():
                         # d'identité avec laquelle il a demandé le prêt ? (ans)
                         # ==============================================================
                         if 'YEAR_ID_PUBLISH' in feat_imp_to_show:
-
+                                
                             with st.spinner('**Chargement du graphique comparatif YEAR_ID_PUBLISH...**'):
-
+                                
                                 dip_max = int(-df_client.DAYS_ID_PUBLISH_MIN.values/365)
                                 dip_q75 = int(-df_client.DAYS_ID_PUBLISH_Q25.values/365)
                                 dip_mean = int(-df_client.DAYS_ID_PUBLISH_MEAN.values/365)
@@ -1383,14 +1383,14 @@ def infos_clients_similaires():
                                 dip_client = int(-df_dashboard[df_dashboard['SK_ID_CURR'] == client_id][
                                     'DAYS_ID_PUBLISH'].values/365)
                                 dip_axis_min = min(dip_min, dip_client)
-                                dip_axis_max = max(dip_max, dip_client)
-
+                                dip_axis_max = max(dip_max, dip_client) 
+                                
                                 cond = dip_client == dip_min and dip_min == dip_q25 and \
                                     dip_q25 == dip_mean and dip_mean == dip_q75 and dip_q75 == dip_max
-
+                                
                                 if not cond:
                                     fig_dip = go.Figure()
-
+                                
                                     fig_dip.add_trace(go.Indicator(
                                         mode = "number+gauge+delta",
                                         value = dip_client,
@@ -1419,17 +1419,17 @@ def infos_clients_similaires():
 
                                     fig_dip.update_layout(height=200,
                                                           margin={'t':0, 'b':0, 'l':0})
-
+  
                                     st.markdown(html_YEAR_ID_PUBLISH, unsafe_allow_html=True)
-
+        
                                     # Go Indicator bullets
-                                    st.plotly_chart(fig_dip)
-
+                                    st.plotly_chart(fig_dip) 
+                                     
                                     # ==================== ViolinPlot ========================================================
                                     sns.violinplot(x='PRED_CLASSE_CLIENT', y='DAYS_ID_PUBLISH',
                                                    data=df_dashboard,
                                                    palette=['Green', 'Crimson'])
-
+    
                                     plt.plot(df_client_courant['PRED_CLASSE_CLIENT'],
                                              dip_client,
                                              color="orange",
@@ -1440,7 +1440,7 @@ def infos_clients_similaires():
                                                            markersize=16, label='Position du client')
                                     plt.legend(handles=[client], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
                                     st.pyplot()
-
+                                        
                                     # ==================== DistPlot ==========================================================
                                     # Non-défaillants
                                     sns.distplot(df_dashboard['DAYS_ID_PUBLISH'][df_dashboard[
@@ -1457,22 +1457,22 @@ def infos_clients_similaires():
                                     # Position du client
                                     plt.axvline(x=dip_client, color='orange', label='Position du client')
                                     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
-                                    st.pyplot()
-
+                                    st.pyplot()                                   
+                                                                                                           
                                 else:
-
-                                    st.markdown(html_YEAR_ID_PUBLISH, unsafe_allow_html=True)
-                                    st.write("Toutes les valeurs sont identiques")
+                                    
+                                    st.markdown(html_YEAR_ID_PUBLISH, unsafe_allow_html=True)                                   
+                                    st.write("Toutes les valeurs sont identiques") 
 
 
                         # ==============================================================
                         # Variable EXT_SOURCE_1
-                        # Source externe normalisée
+                        # Source externe normalisée 
                         # ==============================================================
                         if 'EXT_SOURCE_1' in feat_imp_to_show:
-
+                                
                             with st.spinner('**Chargement du graphique comparatif EXT_SOURCE_1...**'):
-
+ 
                                 es1_min = int(df_client.EXT_SOURCE_1_MIN.values * 100)
                                 es1_q25 = int(df_client.EXT_SOURCE_1_Q25.values * 100)
                                 es1_mean = int(df_client.EXT_SOURCE_1_MEAN.values * 100)
@@ -1481,15 +1481,15 @@ def infos_clients_similaires():
                                 es1_client = int(df_dashboard[df_dashboard['SK_ID_CURR'] == client_id][
                                     'EXT_SOURCE_1'].values * 100)
                                 es1_axis_min = min(es1_min, es1_client)
-                                es1_axis_max = max(es1_max, es1_client)
-
+                                es1_axis_max = max(es1_max, es1_client) 
+                                
                                 cond = es1_client == es1_min and es1_min == es1_q25 and \
                                     es1_q25 == es1_mean and es1_mean == es1_q75 and \
                                     es1_q75 == es1_max
-
+                                
                                 if not cond:
                                     fig_es1 = go.Figure()
-
+                                
                                     fig_es1.add_trace(go.Indicator(
                                         mode = "number+gauge+delta",
                                         value = es1_client,
@@ -1518,17 +1518,17 @@ def infos_clients_similaires():
 
                                     fig_es1.update_layout(height=200,
                                                           margin={'t':0, 'b':0, 'l':0})
-
+  
                                     st.markdown(html_EXT_SOURCE_1, unsafe_allow_html=True)
-
+        
                                     # Go Indicator bullets
-                                    st.plotly_chart(fig_es1)
-
+                                    st.plotly_chart(fig_es1) 
+                                     
                                     # ==================== ViolinPlot ========================================================
                                     sns.violinplot(x='PRED_CLASSE_CLIENT', y='EXT_SOURCE_1',
                                                    data=df_dashboard,
                                                    palette=['Green', 'Crimson'])
-
+    
                                     plt.plot(df_client_courant['PRED_CLASSE_CLIENT'],
                                              es1_client,
                                              color="orange",
@@ -1539,7 +1539,7 @@ def infos_clients_similaires():
                                                            markersize=16, label='Position du client')
                                     plt.legend(handles=[client], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
                                     st.pyplot()
-
+                                        
                                     # ==================== DistPlot ==========================================================
                                     # Non-défaillants
                                     sns.distplot(df_dashboard['EXT_SOURCE_1'][df_dashboard[
@@ -1556,22 +1556,22 @@ def infos_clients_similaires():
                                     # Position du client
                                     plt.axvline(x=es1_client, color='orange', label='Position du client')
                                     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
-                                    st.pyplot()
-
+                                    st.pyplot()                                   
+                                                                                                           
                                 else:
-
-                                    st.markdown(html_EXT_SOURCE_1, unsafe_allow_html=True)
-                                    st.write("Toutes les valeurs sont identiques")
+                                    
+                                    st.markdown(html_EXT_SOURCE_1, unsafe_allow_html=True)                                   
+                                    st.write("Toutes les valeurs sont identiques") 
 
 
                         # ==============================================================
                         # Variable EXT_SOURCE_2
-                        # Source externe normalisée
+                        # Source externe normalisée 
                         # ==============================================================
                         if 'EXT_SOURCE_2' in feat_imp_to_show:
-
+                                
                             with st.spinner('**Chargement du graphique comparatif EXT_SOURCE_2...**'):
-
+ 
                                 es2_min = int(df_client.EXT_SOURCE_2_MIN.values * 100)
                                 es2_q25 = int(df_client.EXT_SOURCE_2_Q25.values * 100)
                                 es2_mean = int(df_client.EXT_SOURCE_2_MEAN.values * 100)
@@ -1580,15 +1580,15 @@ def infos_clients_similaires():
                                 es2_client = int(df_dashboard[df_dashboard['SK_ID_CURR'] == client_id][
                                     'EXT_SOURCE_2'].values * 100)
                                 es2_axis_min = min(es2_min, es2_client)
-                                es2_axis_max = max(es2_max, es2_client)
-
+                                es2_axis_max = max(es2_max, es2_client) 
+                                    
                                 cond = es2_client == es2_min and es2_min == es2_q25 and \
                                     es2_q25 == es2_mean and es2_mean == es2_q75 and \
                                     es2_q75 == es2_max
-
+                                
                                 if not cond:
                                     fig_es2 = go.Figure()
-
+                                
                                     fig_es2.add_trace(go.Indicator(
                                         mode = "number+gauge+delta",
                                         value = es2_client,
@@ -1617,17 +1617,17 @@ def infos_clients_similaires():
 
                                     fig_es2.update_layout(height=200,
                                                           margin={'t':0, 'b':0, 'l':0})
-
+  
                                     st.markdown(html_EXT_SOURCE_2, unsafe_allow_html=True)
-
+        
                                     # Go Indicator bullets
-                                    st.plotly_chart(fig_es2)
+                                    st.plotly_chart(fig_es2) 
 
                                     # ==================== ViolinPlot ========================================================
                                     sns.violinplot(x='PRED_CLASSE_CLIENT', y='EXT_SOURCE_2',
                                                    data=df_dashboard,
                                                    palette=['Green', 'Crimson'])
-
+    
                                     plt.plot(df_client_courant['PRED_CLASSE_CLIENT'],
                                              es2_client,
                                              color="orange",
@@ -1638,7 +1638,7 @@ def infos_clients_similaires():
                                                            markersize=16, label='Position du client')
                                     plt.legend(handles=[client], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
                                     st.pyplot()
-
+                                        
                                     # ==================== DistPlot ==========================================================
                                     # Non-défaillants
                                     sns.distplot(df_dashboard['EXT_SOURCE_2'][df_dashboard[
@@ -1655,22 +1655,22 @@ def infos_clients_similaires():
                                     # Position du client
                                     plt.axvline(x=es2_client, color='orange', label='Position du client')
                                     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
-                                    st.pyplot()
-
+                                    st.pyplot()                                   
+                                   
                                 else:
-
-                                    st.markdown(html_EXT_SOURCE_2, unsafe_allow_html=True)
-                                    st.write("Toutes les valeurs sont identiques")
+                                    
+                                    st.markdown(html_EXT_SOURCE_2, unsafe_allow_html=True)                                   
+                                    st.write("Toutes les valeurs sont identiques") 
 
 
                         # ==============================================================
                         # Variable EXT_SOURCE_3
-                        # Source externe normalisée
+                        # Source externe normalisée 
                         # ==============================================================
                         if 'EXT_SOURCE_3' in feat_imp_to_show:
-
+                                
                             with st.spinner('**Chargement du graphique comparatif EXT_SOURCE_3...**'):
-
+ 
                                 es3_min = int(df_client.EXT_SOURCE_3_MIN.values * 100)
                                 es3_q25 = int(df_client.EXT_SOURCE_3_Q25.values * 100)
                                 es3_mean = int(df_client.EXT_SOURCE_3_MEAN.values * 100)
@@ -1679,15 +1679,15 @@ def infos_clients_similaires():
                                 es3_client = int(df_dashboard[df_dashboard['SK_ID_CURR'] == client_id][
                                     'EXT_SOURCE_3'].values * 100)
                                 es3_axis_min = min(es3_min, es3_client)
-                                es3_axis_max = max(es3_max, es3_client)
-
+                                es3_axis_max = max(es3_max, es3_client) 
+                                
                                 cond = es3_client == es3_min and es3_min == es3_q25 and \
                                     es3_q25 == es3_mean and es3_mean == es3_q75 and \
                                     es3_q75 == es3_max
-
+                                
                                 if not cond:
                                     fig_es3 = go.Figure()
-
+                                
                                     fig_es3.add_trace(go.Indicator(
                                         mode = "number+gauge+delta",
                                         value = es3_client,
@@ -1716,17 +1716,17 @@ def infos_clients_similaires():
 
                                     fig_es3.update_layout(height=200,
                                                           margin={'t':0, 'b':0, 'l':0})
-
+  
                                     st.markdown(html_EXT_SOURCE_3, unsafe_allow_html=True)
-
+        
                                     # Go Indicator bullets
-                                    st.plotly_chart(fig_es3)
+                                    st.plotly_chart(fig_es3) 
 
                                     # ==================== ViolinPlot ========================================================
                                     sns.violinplot(x='PRED_CLASSE_CLIENT', y='EXT_SOURCE_3',
                                                    data=df_dashboard,
                                                    palette=['Green', 'Crimson'])
-
+    
                                     plt.plot(df_client_courant['PRED_CLASSE_CLIENT'],
                                              es3_client,
                                              color="orange",
@@ -1737,7 +1737,7 @@ def infos_clients_similaires():
                                                            markersize=16, label='Position du client')
                                     plt.legend(handles=[client], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
                                     st.pyplot()
-
+                                        
                                     # ==================== DistPlot ==========================================================
                                     # Non-défaillants
                                     sns.distplot(df_dashboard['EXT_SOURCE_3'][df_dashboard[
@@ -1754,12 +1754,12 @@ def infos_clients_similaires():
                                     # Position du client
                                     plt.axvline(x=es3_client, color='orange', label='Position du client')
                                     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
-                                    st.pyplot()
-
+                                    st.pyplot()                                   
+                                    
                                 else:
-
-                                    st.markdown(html_EXT_SOURCE_3, unsafe_allow_html=True)
-                                    st.write("Toutes les valeurs sont identiques")
+                                    
+                                    st.markdown(html_EXT_SOURCE_3, unsafe_allow_html=True)                                   
+                                    st.write("Toutes les valeurs sont identiques") 
 
 
                         # ==============================================================
@@ -1767,9 +1767,9 @@ def infos_clients_similaires():
                         # Valeur maximale des 3 sources externes normalisées (EXT_SOURCE_1, EXT_SOURCE_2 et EXT_SOURCE_3)
                         # ==============================================================
                         if 'EXT_SOURCE_MAX' in feat_imp_to_show:
-
+                                
                             with st.spinner('**Chargement du graphique comparatif EXT_SOURCE_MAX...**'):
-
+ 
                                 esm_min = int(df_client.EXT_SOURCE_MAX_MIN.values * 100)
                                 esm_q25 = int(df_client.EXT_SOURCE_MAX_Q25.values * 100)
                                 esm_mean = int(df_client.EXT_SOURCE_MAX_MEAN.values * 100)
@@ -1778,15 +1778,15 @@ def infos_clients_similaires():
                                 esm_client = int(df_dashboard[df_dashboard['SK_ID_CURR'] == client_id][
                                     'EXT_SOURCE_MAX'].values * 100)
                                 esm_axis_min = min(esm_min, esm_client)
-                                esm_axis_max = max(esm_max, esm_client)
-
+                                esm_axis_max = max(esm_max, esm_client) 
+                                
                                 cond = esm_client == esm_min and esm_min == esm_q25 and \
                                     esm_q25 == esm_mean and esm_mean == esm_q75 and \
                                     esm_q75 == esm_max
-
+                                
                                 if not cond:
                                     fig_esm = go.Figure()
-
+                                
                                     fig_esm.add_trace(go.Indicator(
                                         mode = "number+gauge+delta",
                                         value = esm_client,
@@ -1815,17 +1815,17 @@ def infos_clients_similaires():
 
                                     fig_esm.update_layout(height=200,
                                                           margin={'t':0, 'b':0, 'l':0})
-
+  
                                     st.markdown(html_EXT_SOURCE_MAX, unsafe_allow_html=True)
-
+        
                                     # Go Indicator bullets
-                                    st.plotly_chart(fig_esm)
+                                    st.plotly_chart(fig_esm) 
 
                                     # ==================== ViolinPlot ========================================================
                                     sns.violinplot(x='PRED_CLASSE_CLIENT', y='EXT_SOURCE_MAX',
                                                    data=df_dashboard,
                                                    palette=['Green', 'Crimson'])
-
+    
                                     plt.plot(df_client_courant['PRED_CLASSE_CLIENT'],
                                              esm_client,
                                              color="orange",
@@ -1836,7 +1836,7 @@ def infos_clients_similaires():
                                                            markersize=16, label='Position du client')
                                     plt.legend(handles=[client], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
                                     st.pyplot()
-
+                                        
                                     # ==================== DistPlot ==========================================================
                                     # Non-défaillants
                                     sns.distplot(df_dashboard['EXT_SOURCE_MAX'][df_dashboard[
@@ -1853,22 +1853,22 @@ def infos_clients_similaires():
                                     # Position du client
                                     plt.axvline(x=esm_client, color='orange', label='Position du client')
                                     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
-                                    st.pyplot()
-
+                                    st.pyplot()                                   
+                                                                        
                                 else:
-
-                                    st.markdown(html_EXT_SOURCE_MAX, unsafe_allow_html=True)
-                                    st.write("Toutes les valeurs sont identiques")
+                                    
+                                    st.markdown(html_EXT_SOURCE_MAX, unsafe_allow_html=True)                                   
+                                    st.write("Toutes les valeurs sont identiques") 
 
 
                         # ==============================================================
                         # Variable EXT_SOURCE_SUM
-                        # Somme des 3 sources externes normalisées (EXT_SOURCE_1, EXT_SOURCE_2 et EXT_SOURCE_3)
+                        # Somme des 3 sources externes normalisées (EXT_SOURCE_1, EXT_SOURCE_2 et EXT_SOURCE_3) 
                         # ==============================================================
                         if 'EXT_SOURCE_SUM' in feat_imp_to_show:
-
+                                
                             with st.spinner('**Chargement du graphique comparatif EXT_SOURCE_SUM...**'):
-
+                                 
                                 ess_min = int(df_client.EXT_SOURCE_SUM_MIN.values * 100)
                                 ess_q25 = int(df_client.EXT_SOURCE_SUM_Q25.values * 100)
                                 ess_mean = int(df_client.EXT_SOURCE_SUM_MEAN.values * 100)
@@ -1877,15 +1877,15 @@ def infos_clients_similaires():
                                 ess_client = int(df_dashboard[df_dashboard['SK_ID_CURR'] == client_id][
                                     'EXT_SOURCE_SUM'].values * 100)
                                 ess_axis_min = min(ess_min, ess_client)
-                                ess_axis_max = max(ess_max, ess_client)
-
+                                ess_axis_max = max(ess_max, ess_client) 
+                                
                                 cond = ess_client == ess_min and ess_min == ess_q25 and \
                                     ess_q25 == ess_mean and ess_mean == ess_q75 and \
                                     ess_q75 == ess_max
-
+                                
                                 if not cond:
                                     fig_ess = go.Figure()
-
+                                
                                     fig_ess.add_trace(go.Indicator(
                                         mode = "number+gauge+delta",
                                         value = ess_client,
@@ -1914,17 +1914,17 @@ def infos_clients_similaires():
 
                                     fig_ess.update_layout(height=200,
                                                           margin={'t':0, 'b':0, 'l':0})
-
+  
                                     st.markdown(html_EXT_SOURCE_SUM, unsafe_allow_html=True)
-
+        
                                     # Go Indicator bullets
-                                    st.plotly_chart(fig_ess)
+                                    st.plotly_chart(fig_ess) 
 
                                     # ==================== ViolinPlot ========================================================
                                     sns.violinplot(x='PRED_CLASSE_CLIENT', y='EXT_SOURCE_SUM',
                                                    data=df_dashboard,
                                                    palette=['Green', 'Crimson'])
-
+    
                                     plt.plot(df_client_courant['PRED_CLASSE_CLIENT'],
                                              ess_client,
                                              color="orange",
@@ -1935,7 +1935,7 @@ def infos_clients_similaires():
                                                            markersize=16, label='Position du client')
                                     plt.legend(handles=[client], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
                                     st.pyplot()
-
+                                        
                                     # ==================== DistPlot ==========================================================
                                     # Non-défaillants
                                     sns.distplot(df_dashboard['EXT_SOURCE_SUM'][df_dashboard[
@@ -1952,12 +1952,12 @@ def infos_clients_similaires():
                                     # Position du client
                                     plt.axvline(x=ess_client, color='orange', label='Position du client')
                                     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
-                                    st.pyplot()
-
+                                    st.pyplot()                                   
+                                    
                                 else:
-
-                                    st.markdown(html_EXT_SOURCE_SUM, unsafe_allow_html=True)
-                                    st.write("Toutes les valeurs sont identiques")
+                                    
+                                    st.markdown(html_EXT_SOURCE_SUM, unsafe_allow_html=True)                                   
+                                    st.write("Toutes les valeurs sont identiques") 
 
 
                         # ==============================================================
@@ -1966,9 +1966,9 @@ def infos_clients_similaires():
                         # acompte
                         # ==============================================================
                         if 'INST_PAY_AMT_INSTALMENT_SUM' in feat_imp_to_show:
-
+                                
                             with st.spinner('**Chargement du graphique comparatif INST_PAY_AMT_INSTALMENT_SUM...**'):
-
+                                 
                                 ipais_min = int(df_client.INST_PAY_AMT_INSTALMENT_SUM_MIN.values)
                                 ipais_q25 = int(df_client.INST_PAY_AMT_INSTALMENT_SUM_Q25.values)
                                 ipais_mean = int(df_client.INST_PAY_AMT_INSTALMENT_SUM_MEAN.values)
@@ -1978,14 +1978,14 @@ def infos_clients_similaires():
                                     'INST_PAY_AMT_INSTALMENT_SUM'].values)
                                 ipais_axis_min = min(ipais_min, ipais_client)
                                 ipais_axis_max = max(ipais_max, ipais_client)
-
+                                
                                 cond = ipais_client == ipais_min and ipais_min == ipais_q25 and \
                                     ipais_q25 == ipais_mean and ipais_mean == ipais_q75 and \
                                     ipais_q75 == ipais_max
-
+                                
                                 if not cond:
                                     fig_ipais = go.Figure()
-
+                                
                                     fig_ipais.add_trace(go.Indicator(
                                         mode = "number+gauge+delta",
                                         value = ipais_client,
@@ -2014,17 +2014,17 @@ def infos_clients_similaires():
 
                                     fig_ipais.update_layout(height=200,
                                                             margin={'t':0, 'b':0, 'l':0})
-
+  
                                     st.markdown(html_INST_PAY_AMT_INSTALMENT_SUM, unsafe_allow_html=True)
-
+        
                                     # Go Indicator bullets
-                                    st.plotly_chart(fig_ipais)
+                                    st.plotly_chart(fig_ipais) 
 
                                     # ==================== ViolinPlot ========================================================
                                     sns.violinplot(x='PRED_CLASSE_CLIENT', y='INST_PAY_AMT_INSTALMENT_SUM',
                                                    data=df_dashboard,
                                                    palette=['Green', 'Crimson'])
-
+    
                                     plt.plot(df_client_courant['PRED_CLASSE_CLIENT'],
                                              ipais_client,
                                              color="orange",
@@ -2035,7 +2035,7 @@ def infos_clients_similaires():
                                                            markersize=16, label='Position du client')
                                     plt.legend(handles=[client], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
                                     st.pyplot()
-
+                                        
                                     # ==================== DistPlot ==========================================================
                                     # Non-défaillants
                                     sns.distplot(df_dashboard['INST_PAY_AMT_INSTALMENT_SUM'][df_dashboard[
@@ -2052,12 +2052,12 @@ def infos_clients_similaires():
                                     # Position du client
                                     plt.axvline(x=ipais_client, color='orange', label='Position du client')
                                     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
-                                    st.pyplot()
-
+                                    st.pyplot()                                   
+                                    
                                 else:
-
-                                    st.markdown(html_INST_PAY_AMT_INSTALMENT_SUM, unsafe_allow_html=True)
-                                    st.write("Toutes les valeurs sont identiques")
+                                    
+                                    st.markdown(html_INST_PAY_AMT_INSTALMENT_SUM, unsafe_allow_html=True)                                   
+                                    st.write("Toutes les valeurs sont identiques") 
 
 
                         # ==============================================================
@@ -2066,12 +2066,12 @@ def infos_clients_similaires():
                         # dans Home Crédit du ratio : La date à laquelle le versement du crédit
                         # précédent était censé être payé (par rapport à la date de demande du
                         # prêt actuel) \ Quand les échéances du crédit précédent ont-elles été
-                        # effectivement payées (par rapport à la date de demande du prêt
+                        # effectivement payées (par rapport à la date de demande du prêt 
                         # ==============================================================
                         if 'INST_PAY_DAYS_PAYMENT_RATIO_MAX' in feat_imp_to_show:
-
+                                
                             with st.spinner('**Chargement du graphique comparatif INST_PAY_DAYS_PAYMENT_RATIO_MAX...**'):
-
+                                 
                                 ipdprm_min = int(df_client.INST_PAY_DAYS_PAYMENT_RATIO_MAX_MIN.values)
                                 ipdprm_q25 = int(df_client.INST_PAY_DAYS_PAYMENT_RATIO_MAX_Q25.values)
                                 ipdprm_mean = int(df_client.INST_PAY_DAYS_PAYMENT_RATIO_MAX_MEAN.values)
@@ -2081,14 +2081,14 @@ def infos_clients_similaires():
                                     'INST_PAY_DAYS_PAYMENT_RATIO_MAX'].values)
                                 ipdprm_axis_min = min(ipdprm_min, ipdprm_client)
                                 ipdprm_axis_max = max(ipdprm_max, ipdprm_client)
-
+                                
                                 cond = ipdprm_client == ipdprm_min and ipdprm_min == ipdprm_q25 and \
                                     ipdprm_q25 == ipdprm_mean and ipdprm_mean == ipdprm_q75 and \
                                     ipdprm_q75 == ipdprm_max
-
+                                
                                 if not cond:
                                     fig_ipdprm = go.Figure()
-
+                                
                                     fig_ipdprm.add_trace(go.Indicator(
                                         mode = "number+gauge+delta",
                                         value = ipdprm_client,
@@ -2117,17 +2117,17 @@ def infos_clients_similaires():
 
                                     fig_ipdprm.update_layout(height=200,
                                                              margin={'t':0, 'b':0, 'l':0})
-
+  
                                     st.markdown(html_INST_PAY_DAYS_PAYMENT_RATIO_MAX, unsafe_allow_html=True)
-
+        
                                     # Go Indicator bullets
-                                    st.plotly_chart(fig_ipdprm)
+                                    st.plotly_chart(fig_ipdprm) 
 
                                     # ==================== ViolinPlot ========================================================
                                     sns.violinplot(x='PRED_CLASSE_CLIENT', y='INST_PAY_DAYS_PAYMENT_RATIO_MAX',
                                                    data=df_dashboard,
                                                    palette=['Green', 'Crimson'])
-
+    
                                     plt.plot(df_client_courant['PRED_CLASSE_CLIENT'],
                                              ipdprm_client,
                                              color="orange",
@@ -2138,7 +2138,7 @@ def infos_clients_similaires():
                                                            markersize=16, label='Position du client')
                                     plt.legend(handles=[client], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
                                     st.pyplot()
-
+                                        
                                     # ==================== DistPlot ==========================================================
                                     # Non-défaillants
                                     sns.distplot(df_dashboard['INST_PAY_DAYS_PAYMENT_RATIO_MAX'][df_dashboard[
@@ -2155,22 +2155,22 @@ def infos_clients_similaires():
                                     # Position du client
                                     plt.axvline(x=ipdprm_client, color='orange', label='Position du client')
                                     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
-                                    st.pyplot()
-
+                                    st.pyplot()                                   
+                                                                        
                                 else:
-
-                                    st.markdown(html_INST_PAY_DAYS_PAYMENT_RATIO_MAX, unsafe_allow_html=True)
-                                    st.write("Toutes les valeurs sont identiques")
+                                    
+                                    st.markdown(html_INST_PAY_DAYS_PAYMENT_RATIO_MAX, unsafe_allow_html=True)                                   
+                                    st.write("Toutes les valeurs sont identiques") 
 
 
                         # ==============================================================
                         # Variable POS_CASH_NAME_CONTRACT_STATUS_ACTIVE_SUM
-                        # Somme des contrats actifs au cours du mois
+                        # Somme des contrats actifs au cours du mois 
                         # ==============================================================
                         if 'POS_CASH_NAME_CONTRACT_STATUS_ACTIVE_SUM' in feat_imp_to_show:
-
+                                
                             with st.spinner('**Chargement du graphique comparatif POS_CASH_NAME_CONTRACT_STATUS_ACTIVE_SUM...**'):
-
+                                                                 
                                 pcncsas_min = int(df_client.POS_CASH_NAME_CONTRACT_STATUS_ACTIVE_SUM_MIN.values)
                                 pcncsas_q25 = int(df_client.POS_CASH_NAME_CONTRACT_STATUS_ACTIVE_SUM_Q25.values)
                                 pcncsas_mean = int(df_client.POS_CASH_NAME_CONTRACT_STATUS_ACTIVE_SUM_MEAN.values)
@@ -2180,14 +2180,14 @@ def infos_clients_similaires():
                                     'POS_CASH_NAME_CONTRACT_STATUS_ACTIVE_SUM'].values)
                                 pcncsas_axis_min = min(pcncsas_min, pcncsas_client)
                                 pcncsas_axis_max = max(pcncsas_max, pcncsas_client)
-
+                                
                                 cond = pcncsas_client == pcncsas_min and pcncsas_min == pcncsas_q25 and \
                                     pcncsas_q25 == pcncsas_mean and pcncsas_mean == pcncsas_q75 and \
                                     pcncsas_q75 == pcncsas_max
-
+                                
                                 if not cond:
                                     fig_pcncsas = go.Figure()
-
+                                
                                     fig_pcncsas.add_trace(go.Indicator(
                                         mode = "number+gauge+delta",
                                         value = pcncsas_client,
@@ -2216,17 +2216,17 @@ def infos_clients_similaires():
 
                                     fig_pcncsas.update_layout(height=200,
                                                               margin={'t':0, 'b':0, 'l':0})
-
+  
                                     st.markdown(html_POS_CASH_NAME_CONTRACT_STATUS_ACTIVE_SUM, unsafe_allow_html=True)
-
+        
                                     # Go Indicator bullets
-                                    st.plotly_chart(fig_pcncsas)
+                                    st.plotly_chart(fig_pcncsas) 
 
                                     # ==================== ViolinPlot ========================================================
                                     sns.violinplot(x='PRED_CLASSE_CLIENT', y='POS_CASH_NAME_CONTRACT_STATUS_ACTIVE_SUM',
                                                    data=df_dashboard,
                                                    palette=['Green', 'Crimson'])
-
+    
                                     plt.plot(df_client_courant['PRED_CLASSE_CLIENT'],
                                              pcncsas_client,
                                              color="orange",
@@ -2237,7 +2237,7 @@ def infos_clients_similaires():
                                                            markersize=16, label='Position du client')
                                     plt.legend(handles=[client], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
                                     st.pyplot()
-
+                                        
                                     # ==================== DistPlot ==========================================================
                                     # Non-défaillants
                                     sns.distplot(df_dashboard['POS_CASH_NAME_CONTRACT_STATUS_ACTIVE_SUM'][df_dashboard[
@@ -2254,24 +2254,24 @@ def infos_clients_similaires():
                                     # Position du client
                                     plt.axvline(x=pcncsas_client, color='orange', label='Position du client')
                                     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
-                                    st.pyplot()
-
+                                    st.pyplot()                                   
+                                                                                                            
                                 else:
-
-                                    st.markdown(html_POS_CASH_NAME_CONTRACT_STATUS_ACTIVE_SUM, unsafe_allow_html=True)
-                                    st.write("Toutes les valeurs sont identiques")
+                                    
+                                    st.markdown(html_POS_CASH_NAME_CONTRACT_STATUS_ACTIVE_SUM, unsafe_allow_html=True)                                   
+                                    st.write("Toutes les valeurs sont identiques") 
 
 
                         # ==============================================================
                         # Variable PREV_APP_INTEREST_SHARE_MAX
                         # La valeur maximale de tous les précédents crédit dans d'autres
                         # institution : de la durée du crédit multiplié par l'annuité du prêt
-                        # moins le montant final du crédit
+                        # moins le montant final du crédit 
                         # ==============================================================
                         if 'PREV_APP_INTEREST_SHARE_MAX' in feat_imp_to_show:
-
+                                
                             with st.spinner('**Chargement du graphique comparatif PREV_APP_INTEREST_SHARE_MAX...**'):
-
+                                                                                                 
                                 paism_min = int(df_client.PREV_APP_INTEREST_SHARE_MAX_MIN.values)
                                 paism_q25 = int(df_client.PREV_APP_INTEREST_SHARE_MAX_Q25.values)
                                 paism_mean = int(df_client.PREV_APP_INTEREST_SHARE_MAX_MEAN.values)
@@ -2281,14 +2281,14 @@ def infos_clients_similaires():
                                     'PREV_APP_INTEREST_SHARE_MAX'].values)
                                 paism_axis_min = min(paism_min, paism_client)
                                 paism_axis_max = max(paism_max, paism_client)
-
+                                
                                 cond = paism_client == paism_min and paism_min == paism_q25 and \
                                     paism_q25 == paism_mean and paism_mean == paism_q75 and \
                                     paism_q75 == paism_max
-
+                                
                                 if not cond:
                                     fig_paism = go.Figure()
-
+                                
                                     fig_paism.add_trace(go.Indicator(
                                         mode = "number+gauge+delta",
                                         value = paism_client,
@@ -2317,17 +2317,17 @@ def infos_clients_similaires():
 
                                     fig_paism.update_layout(height=200,
                                                             margin={'t':0, 'b':0, 'l':0})
-
+  
                                     st.markdown(html_PREV_APP_INTEREST_SHARE_MAX, unsafe_allow_html=True)
-
+        
                                     # Go Indicator bullets
-                                    st.plotly_chart(fig_paism)
+                                    st.plotly_chart(fig_paism) 
 
                                     # ==================== ViolinPlot ========================================================
                                     sns.violinplot(x='PRED_CLASSE_CLIENT', y='PREV_APP_INTEREST_SHARE_MAX',
                                                    data=df_dashboard,
                                                    palette=['Green', 'Crimson'])
-
+    
                                     plt.plot(df_client_courant['PRED_CLASSE_CLIENT'],
                                              paism_client,
                                              color="orange",
@@ -2338,7 +2338,7 @@ def infos_clients_similaires():
                                                            markersize=16, label='Position du client')
                                     plt.legend(handles=[client], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
                                     st.pyplot()
-
+                                        
                                     # ==================== DistPlot ==========================================================
                                     # Non-défaillants
                                     sns.distplot(df_dashboard['PREV_APP_INTEREST_SHARE_MAX'][df_dashboard[
@@ -2355,19 +2355,19 @@ def infos_clients_similaires():
                                     # Position du client
                                     plt.axvline(x=paism_client, color='orange', label='Position du client')
                                     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
-                                    st.pyplot()
-
+                                    st.pyplot()                                   
+                                                                                                                                                
                                 else:
-
-                                    st.markdown(html_PREV_APP_INTEREST_SHARE_MAX, unsafe_allow_html=True)
-                                    st.write("Toutes les valeurs sont identiques")
+                                    
+                                    st.markdown(html_PREV_APP_INTEREST_SHARE_MAX, unsafe_allow_html=True)                                   
+                                    st.write("Toutes les valeurs sont identiques") 
 
                         # ==============================================================
                         # Variable CODE_GENDER
-                        # Sexe
+                        # Sexe 
                         # ==============================================================
                         if 'CODE_GENDER' in feat_imp_to_show:
-
+                                
                             with st.spinner('**Chargement du graphique comparatif CODE_GENDER...**'):
 
                                     cg_client = int(df_dashboard[df_dashboard['SK_ID_CURR'] == client_id][
@@ -2379,7 +2379,7 @@ def infos_clients_similaires():
                                     sns.violinplot(x='PRED_CLASSE_CLIENT', y='CODE_GENDER',
                                                    data=df_dashboard,
                                                    palette=['Green', 'Crimson'])
-
+    
                                     plt.plot(df_client_courant['PRED_CLASSE_CLIENT'],
                                              cg_client,
                                              color="orange",
@@ -2390,7 +2390,7 @@ def infos_clients_similaires():
                                                            markersize=16, label='Position du client')
                                     plt.legend(handles=[client], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
                                     st.pyplot()
-
+                                        
                                     # ==================== DistPlot ==========================================================
                                     # Non-défaillants
                                     sns.distplot(df_dashboard['CODE_GENDER'][df_dashboard[
@@ -2407,27 +2407,27 @@ def infos_clients_similaires():
                                     # Position du client
                                     plt.axvline(x=cg_client, color='orange', label='Position du client')
                                     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
-                                    st.pyplot()
-
+                                    st.pyplot()                                   
+                                                                             
 
                         # ==============================================================
                         # Variable FLAG_OWN_CAR
                         # Indicateur si le client possède une voiture
                         # ==============================================================
                         if 'FLAG_OWN_CAR' in feat_imp_to_show:
-
+                                
                             with st.spinner('**Chargement du graphique comparatif FLAG_OWN_CAR...**'):
-
+                                
                                     foc_client = int(df_dashboard[df_dashboard['SK_ID_CURR'] == client_id][
                                         'FLAG_OWN_CAR'].values)
 
                                     st.markdown(html_FLAG_OWN_CAR, unsafe_allow_html=True)
-
+                                    
                                     # ==================== ViolinPlot ========================================================
                                     sns.violinplot(x='PRED_CLASSE_CLIENT', y='FLAG_OWN_CAR',
                                                    data=df_dashboard,
                                                    palette=['Green', 'Crimson'])
-
+    
                                     plt.plot(df_client_courant['PRED_CLASSE_CLIENT'],
                                              foc_client,
                                              color="orange",
@@ -2438,7 +2438,7 @@ def infos_clients_similaires():
                                                            markersize=16, label='Position du client')
                                     plt.legend(handles=[client], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
                                     st.pyplot()
-
+                                        
                                     # ==================== DistPlot ==========================================================
                                     # Non-défaillants
                                     sns.distplot(df_dashboard['FLAG_OWN_CAR'][df_dashboard[
@@ -2455,27 +2455,27 @@ def infos_clients_similaires():
                                     # Position du client
                                     plt.axvline(x=foc_client, color='orange', label='Position du client')
                                     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
-                                    st.pyplot()
-
+                                    st.pyplot()  
+                                    
 
                         # ==============================================================
                         # Variable NAME_EDUCATION_TYPE_HIGHER_EDUCATION
                         # Indicateur si le client possède une voiture
                         # ==============================================================
                         if 'NAME_EDUCATION_TYPE_HIGHER_EDUCATION' in feat_imp_to_show:
-
+                                
                             with st.spinner('**Chargement du graphique comparatif NAME_EDUCATION_TYPE_HIGHER_EDUCATION...**'):
-
+                                
                                     nethe_client = int(df_dashboard[df_dashboard['SK_ID_CURR'] == client_id][
                                         'NAME_EDUCATION_TYPE_HIGHER_EDUCATION'].values)
 
                                     st.markdown(html_NAME_EDUCATION_TYPE_HIGHER_EDUCATION, unsafe_allow_html=True)
-
+                                    
                                     # ==================== ViolinPlot ========================================================
                                     sns.violinplot(x='PRED_CLASSE_CLIENT', y='NAME_EDUCATION_TYPE_HIGHER_EDUCATION',
                                                    data=df_dashboard,
                                                    palette=['Green', 'Crimson'])
-
+    
                                     plt.plot(df_client_courant['PRED_CLASSE_CLIENT'],
                                              nethe_client,
                                              color="orange",
@@ -2486,7 +2486,7 @@ def infos_clients_similaires():
                                                            markersize=16, label='Position du client')
                                     plt.legend(handles=[client], bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
                                     st.pyplot()
-
+                                        
                                     # ==================== DistPlot ==========================================================
                                     # Non-défaillants
                                     sns.distplot(df_dashboard['NAME_EDUCATION_TYPE_HIGHER_EDUCATION'][df_dashboard[
@@ -2503,19 +2503,19 @@ def infos_clients_similaires():
                                     # Position du client
                                     plt.axvline(x=nethe_client, color='orange', label='Position du client')
                                     plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0., fontsize=18)
-                                    st.pyplot()
+                                    st.pyplot()  
 
 
-
+                                    
     # ====================== COMPARAISON TRAITS STRICTS CLIENT COURANT / CLIENTS SIMILAIRES ============================
-    if st.sidebar.checkbox("Comparer traits stricts ?"):
+    if st.sidebar.checkbox("Comparer traits stricts ?"):     
 
         if titre:
             st.markdown(html_clients_similaires, unsafe_allow_html=True)
             titre = False
-
-        with st.spinner('**Affiche les traits stricts comparant le client courant et les clients similaires...**'):
-
+            
+        with st.spinner('**Affiche les traits stricts comparant le client courant et les clients similaires...**'):                 
+                                          
             with st.expander('Comparaison traits stricts',
                              expanded=True):
                     # Infos principales clients similaires
@@ -2526,15 +2526,15 @@ def infos_clients_similaires():
                     st.write('10 clients similaires')
                     st.dataframe(voisins_info.style.highlight_max(axis=0))
 
-
+            
     # ====================== COMPARAISON DEMANDE DE PRÊT CLIENT COURANT / CLIENTS SIMILAIRES ============================
-    if st.sidebar.checkbox("Comparer demande prêt ?"):
+    if st.sidebar.checkbox("Comparer demande prêt ?"):     
 
         if titre:
             st.markdown(html_clients_similaires, unsafe_allow_html=True)
             titre = False
-
-        with st.spinner('**Affiche les informations de la demande de prêt comparant le client courant et les clients similaires...**'):
+            
+        with st.spinner('**Affiche les informations de la demande de prêt comparant le client courant et les clients similaires...**'):                 
 
             with st.expander('Comparaison demande de prêt',
                              expanded=True):
@@ -2545,7 +2545,7 @@ def infos_clients_similaires():
                     st.dataframe(client_pret)
                     st.write('10 clients similaires')
                     st.dataframe(voisins_pret.style.highlight_max(axis=0))
-
+            
 
 st.sidebar.subheader('Clients similaires')
 infos_clients_similaires()
@@ -2553,7 +2553,7 @@ infos_clients_similaires()
 # --------------------------------------------------------------------
 # FACTEURS D'INFLUENCE : SHAP VALUE
 # --------------------------------------------------------------------
-
+    
 def affiche_facteurs_influence():
     ''' Affiche les facteurs d'influence du client courant
     '''
@@ -2569,41 +2569,41 @@ def affiche_facteurs_influence():
             </div>
         </div>
         """
-
-    # ====================== GRAPHIQUES COMPARANT CLIENT COURANT / CLIENTS SIMILAIRES ===========================
-    if st.sidebar.checkbox("Voir facteurs d\'influence"):
-
+    
+    # ====================== GRAPHIQUES COMPARANT CLIENT COURANT / CLIENTS SIMILAIRES =========================== 
+    if st.sidebar.checkbox("Voir facteurs d\'influence"):     
+        
         st.markdown(html_facteurs_influence, unsafe_allow_html=True)
 
-        with st.spinner('**Affiche les facteurs d\'influence du client courant...**'):
-
+        with st.spinner('**Affiche les facteurs d\'influence du client courant...**'):                 
+                       
             with st.expander('Facteurs d\'influence du client courant',
                               expanded=True):
-
+                
                 explainer = shap.TreeExplainer(best_model)
-
+                
                 client_index = test_set[test_set['SK_ID_CURR'] == client_id].index.item()
                 X_shap = test_set.set_index('SK_ID_CURR')
                 X_test_courant = X_shap.iloc[client_index]
                 X_test_courant_array = X_test_courant.values.reshape(1, -1)
-
+                
                 shap_values_courant = explainer.shap_values(X_test_courant_array)
-
+                
                 col1, col2 = st.columns([1, 1])
                 # BarPlot du client courant
                 with col1:
 
                     plt.clf()
-
+                    
 
                     # BarPlot du client courant
                     shap.plots.bar( shap_values[client_index], max_display=40)
-
+                    
                     fig = plt.gcf()
                     fig.set_size_inches((10, 20))
                     # Plot the graph on the dashboard
                     st.pyplot(fig)
-
+     
                 # Décision plot du client courant
                 with col2:
                     plt.clf()
@@ -2611,12 +2611,12 @@ def affiche_facteurs_influence():
                     # Décision Plot
                     shap.decision_plot(explainer.expected_value[1], shap_values_courant[1],
                                     X_test_courant)
-
+                
                     fig2 = plt.gcf()
                     fig2.set_size_inches((10, 15))
                     # Plot the graph on the dashboard
                     st.pyplot(fig2)
-
+                    
 st.sidebar.subheader('Facteurs d\'influence')
 affiche_facteurs_influence()
 
@@ -2643,7 +2643,7 @@ dico_stats = {'Variable cible': 'TARGET',
               'Quel jour de la semaine le client a-t-il demandé le prêt ?': 'WEEKDAY_APPR_PROCESS_START',
               'Le client a-t-il fourni un numéro de téléphone portable ?': 'FLAG_MOBIL',
               'Le client a-t-il fourni un numéro de téléphone professionnel fixe ?': 'FLAG_WORK_PHONE',
-              'Le téléphone portable était-il joignable?': 'FLAG_CONT_MOBILE',
+              'Le téléphone portable était-il joignable?': 'FLAG_CONT_MOBILE',             
               'Le client a-t-il fourni un numéro de téléphone domicile fixe ?': 'FLAG_PHONE',
               'Le client a-t-il fourni une adresse électronique': 'FLAG_EMAIL',
               'Âge (ans)': 'AGE_YEARS',
@@ -2693,7 +2693,7 @@ dico_stats = {'Variable cible': 'TARGET',
               'Combien le client a-t-il payé pendant le mois sur le crédit précédent ?': 'AMT_PAYMENT_CURRENT',
               'Combien le client a-t-il payé au total pendant le mois sur le crédit précédent ?': 'AMT_PAYMENT_TOTAL_CURRENT',
               'Montant à recevoir pour le principal du crédit précédent': 'AMT_RECEIVABLE_PRINCIPAL',
-              'Montant à recevoir sur le crédit précédent': 'AMT_RECIVABLE',
+              'Montant à recevoir sur le crédit précédent': 'AMT_RECIVABLE', 
               'Nombre de retraits au guichet automatique durant ce mois sur le crédit précédent': 'CNT_DRAWINGS_ATM_CURRENT',
               'Nombre de retraits pendant ce mois sur le crédit précédent': 'CNT_DRAWINGS_CURRENT',
               'Nombre d\'autres retraits au cours de ce mois sur le crédit précédent': 'CNT_DRAWINGS_OTHER_CURRENT',
@@ -2788,7 +2788,7 @@ dico_stats = {'Variable cible': 'TARGET',
               'DAYS_ENDDATE_FACT': 'DAYS_ENDDATE_FACT'}
 
 path_img = "resources/images/stats/"
-
+   
 def affiche_stats():
     ''' Affiche les statistiques générales provenant de l'EDA
     '''
@@ -2804,21 +2804,21 @@ def affiche_stats():
             </div>
         </div>
         """
-
-    # ====================== GRAPHIQUES COMPARANT CLIENT COURANT / CLIENTS SIMILAIRES ===========================
-    if st.sidebar.checkbox("Voir les distributions"):
-
+    
+    # ====================== GRAPHIQUES COMPARANT CLIENT COURANT / CLIENTS SIMILAIRES =========================== 
+    if st.sidebar.checkbox("Voir les distributions"):     
+        
         st.markdown(html_facteurs_influence, unsafe_allow_html=True)
 
-        with st.spinner('**Affiche les statistiques générales/pour les défaillants...**'):
-
+        with st.spinner('**Affiche les statistiques générales/pour les défaillants...**'):                 
+                       
             with st.expander('Distribution des variables',
                               expanded=True):
-                choix = st.selectbox("Choisir une variable : ", dico_stats.keys())
+                choix = st.selectbox("Choisir une variable : ", dico_stats.keys()) 
                 nom_img = dico_stats[choix]
-                img =  Image.open(path_img + nom_img + ".png")
-                st.image(img)
-
+                img =  Image.open(path_img + nom_img + ".png")                     
+                st.image(img)       
+                
 st.sidebar.subheader('Stats générales')
 affiche_stats()
 
@@ -2838,6 +2838,6 @@ html_line="""
   margin-right: auto;
   border-style: inset;
   border-width: 1.5px;">
-<p style="color:Gray; text-align: right; font-size:12px;">Auteur : davy.bayetpro@gmail.com - 21/06/2022</p>
+<p style="color:Gray; text-align: right; font-size:12px;">Auteur : davy.bayetpro@gmail.com - 25/06/2022</p>
 """
 st.markdown(html_line, unsafe_allow_html=True)
