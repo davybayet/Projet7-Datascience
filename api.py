@@ -15,13 +15,9 @@ def predict(client_id):
     y_proba = best_model.predict_proba(X_test.drop('SK_ID_CURR', axis=1))[:, 1]
     return y_proba
 
-print("Acas env ready")
-
-
 @app.route("/")
 def super_endpoint():
     return "Projet 7 API"
-
 
 @app.route("/predict")
 def predict():
@@ -33,5 +29,5 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5002)
+    app.run(host="127.0.0.1", port=5002, debug=True)
     pass
