@@ -11,7 +11,8 @@ FILE_TEST_SET = 'resources/data/test_set.pickle'
 with open(FILE_TEST_SET, 'rb') as df_test_set:
             test_set = pickle.load(df_test_set)
 FILE_BEST_MODELE = 'resources/modele/best_model.pickle'
-best_model = pickle.load(model_lgbm)
+with open(FILE_BEST_MODELE, 'rb') as model_lgbm:
+            best_model = pickle.load(model_lgbm)
 
 print("API ready")
 
