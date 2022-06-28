@@ -1,9 +1,9 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 import pickle
-import requests
+
 
 app = Flask(__name__)
 # charger le dataset et le model
@@ -26,15 +26,15 @@ def predict(client_id):
 def super_endpoint():
     return "Projet 7 API"
 
-@app.route("/predict", methods=["POST"])
-def predict():
+@app.route("/predict")
+def prediction():
     client_id = request.args.get('client_id')
     # verifier le type de client_id si besoin en faire un int
     proba = predict(client_id)
-    
+
     return jsonify(proba)
 
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5002, debug=True)
+    app.run(host="172.21.119.146", port=8501, debug=True)
     pass
