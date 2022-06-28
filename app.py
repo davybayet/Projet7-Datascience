@@ -36,4 +36,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host=myscoringdashboard.herokuapp.com, debug=True)
