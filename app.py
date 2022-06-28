@@ -26,7 +26,7 @@ def predict(client_id):
 def super_endpoint():
     return "Projet 7 API"
 
-@app.route("/predict")
+@app.route("/predict", methods=["POST"])
 def predict():
     client_id = request.args.get('client_id')
     # verifier le type de client_id si besoin en faire un int
@@ -36,4 +36,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(host=myscoringdashboard.herokuapp.com, debug=True)
+    app.run(debug=True)
