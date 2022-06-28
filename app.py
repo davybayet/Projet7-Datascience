@@ -18,6 +18,7 @@ import matplotlib.pyplot as plt
 import matplotlib.lines as mlines
 import seaborn as sns
 import shap
+import requests
 
 # ====================================================================
 # VARIABLES STATIQUES
@@ -283,9 +284,10 @@ st.markdown(html_score, unsafe_allow_html=True)
 
 # ============== Score du client en pourcentage ==> en utilisant le modèle ======================
 # Sélection des variables du clients
-X_test = test_set[test_set['SK_ID_CURR'] == client_id]
-# Score des prédictions de probabiltés
-y_proba = best_model.predict_proba(X_test.drop('SK_ID_CURR', axis=1))[:, 1]
+# X_test = test_set[test_set['SK_ID_CURR'] == client_id]
+# # Score des prédictions de probabiltés
+# y_proba = best_model.predict_proba(X_test.drop('SK_ID_CURR', axis=1))[:, 1]
+y_proba = requests.get(f"127.0.0.1:5002/predict?clien_id={client_id}")
 # Score du client en pourcentage arrondi et nombre entier
 score_client = int(np.rint(y_proba * 100))
 
