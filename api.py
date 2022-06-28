@@ -7,7 +7,8 @@ import requests
 
 app = Flask(__name__)
 # charger le dataset et le model
-test_set = pickle.load(df_test_set)
+with open(FILE_TEST_SET, 'rb') as df_test_set:
+            test_set = pickle.load(df_test_set)
 best_model = pickle.load(model_lgbm)
 
 print("API ready")
