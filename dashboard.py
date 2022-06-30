@@ -3,8 +3,6 @@
 Local URL: http://localhost:8501
 """
 
-__version__ = '0.0.0'
-
 # ====================================================================
 # Chargement des librairies
 # ====================================================================
@@ -18,7 +16,6 @@ import matplotlib.pyplot as plt
 import matplotlib.lines as mlines
 import seaborn as sns
 import shap
-import requests
 
 # ====================================================================
 # VARIABLES STATIQUES
@@ -284,10 +281,10 @@ st.markdown(html_score, unsafe_allow_html=True)
 
 # ============== Score du client en pourcentage ==> en utilisant le modèle ======================
 # Sélection des variables du clients
-# X_test = test_set[test_set['SK_ID_CURR'] == client_id]
+X_test = test_set[test_set['SK_ID_CURR'] == client_id]
 # # Score des prédictions de probabiltés
-# y_proba = best_model.predict_proba(X_test.drop('SK_ID_CURR', axis=1))[:, 1]
-y_proba = requests.get(f"https://myscoringdashboard.herokuapp.com/predict?clien_id={client_id}")
+y_proba = best_model.predict_proba(X_test.drop('SK_ID_CURR', axis=1))[:, 1]
+# y_proba = requests.get(f"https://myscoringdashboard.herokuapp.com/predict?client_id={client_id}").json()['probability']
 # Score du client en pourcentage arrondi et nombre entier
 score_client = int(np.rint(y_proba * 100))
 

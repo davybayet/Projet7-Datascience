@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 from flask import Flask, jsonify, request
 import pickle
 
-
 app = Flask(__name__)
 # charger le dataset et le model
 FILE_TEST_SET = 'resources/data/test_set.pickle'
@@ -16,25 +15,22 @@ with open(FILE_BEST_MODELE, 'rb') as model_lgbm:
 
 print("API ready")
 
+@app.route('/')
+def home():
+    return 'Entrer un ID client dans la barre URL'
+
+@app.route('/<int:client_id>/')
 def predict(client_id):
-    X_test = test_set[test_set['SK_ID_CURR'] == client_id]
-    # Score des prédictions de probabiltés
-    y_proba = best_model.predict_proba(X_test.drop('SK_ID_CURR', axis=1))[:, 1]
-    return y_proba
-
-@app.route("/")
-def super_endpoint():
-    return "Projet 7 API"
-
-@app.route("/predict")
-def prediction():
-    client_id = request.args.get('client_id')
-    # verifier le type de client_id si besoin en faire un int
-    proba = predict(client_id)
-
-    return jsonify(proba)
+    
+    if client_id not in list(test_set['SK_ID_CURR']):
+        result = 'Ce client n\'est pas dans la base de donnée'
+    else:
+        X_test=test_set[test_set['SK_ID_CURR']==int(client_id)]
+        y_proba=best_model.predict_proba(X_test.drop(['SK_ID_CURR'],axis=1))[:, 1]
+        result=('ce client est solvable avec un score de '+ str(np.around(y_proba*100,2))+'%')
+    return result
 
 
-if __name__ == "__main__":
-    app.run(host="172.21.119.146", port=8501, debug=True)
+if __name__ == '__main__':
+    app.run(debug=True)
     pass
