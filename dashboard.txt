@@ -1,0 +1,1 @@
+Le dashboard interactif est fonctionnel et est déployé et disponible sur heroku : https://myscoringdashboard.herokuapp.com 
