@@ -8,7 +8,7 @@ Local URL: http://localhost:8501
 # ====================================================================
 import streamlit as st
 import numpy as np
-import pandas as pd
+# import pandas as pd
 from PIL import Image
 import pickle
 import plotly.graph_objects as go
@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 import matplotlib.lines as mlines
 import seaborn as sns
 import shap
-import requests
+# import requests
 # ====================================================================
 # VARIABLES STATIQUES
 # ====================================================================
