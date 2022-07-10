@@ -281,7 +281,7 @@ st.markdown(html_score, unsafe_allow_html=True)
 
 # ============== Score du client en pourcentage ==> en utilisant le modèle ======================
 # Sélection des variables du clients
-X_test=test_set[test_set['SK_ID_CURR']==int(client_id)]
+X_test=test_set[test_set['SK_ID_CURR']==client_id]
 # # Score des prédictions de probabiltés
 y_proba = best_model.predict_proba(X_test.drop('SK_ID_CURR', axis=1))[:, 1]
 # y_proba = requests.get(f"http://localhost:8501/{client_id}").json()['result']
@@ -2523,7 +2523,7 @@ def infos_clients_similaires():
                     st.write('Client courant')
                     st.dataframe(client_info)
                     st.write('10 clients similaires')
-                    st.dataframe(voisins_info.style.highlight_max(axis=0))
+                    st.dataframe(voisins_info.reset_index(drop=True).style.highlight_max(axis=0))
 
 
     # ====================== COMPARAISON DEMANDE DE PRÊT CLIENT COURANT / CLIENTS SIMILAIRES ============================
@@ -2543,7 +2543,7 @@ def infos_clients_similaires():
                     st.write('Client courant')
                     st.dataframe(client_pret)
                     st.write('10 clients similaires')
-                    st.dataframe(voisins_pret.style.highlight_max(axis=0))
+                    st.dataframe(voisins_pret.reset_index(drop=True).style.highlight_max(axis=0))
 
 
 st.sidebar.subheader('Clients similaires')
