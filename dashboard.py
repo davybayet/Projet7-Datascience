@@ -1,7 +1,4 @@
-"""Application : Dashboard de Crédit Score
-
-Local URL: http://localhost:8501
-"""
+"""Application : Dashboard de Crédit Score"""
 
 # ====================================================================
 # Chargement des librairies
@@ -16,7 +13,10 @@ import matplotlib.pyplot as plt
 import matplotlib.lines as mlines
 import seaborn as sns
 import shap
-# import requests
+import json
+import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 # ====================================================================
 # VARIABLES STATIQUES
 # ====================================================================
@@ -281,10 +281,15 @@ st.markdown(html_score, unsafe_allow_html=True)
 
 # ============== Score du client en pourcentage ==> en utilisant le modèle ======================
 # Sélection des variables du clients
-X_test=test_set[test_set['SK_ID_CURR']==client_id]
+# X_test=test_set[test_set['SK_ID_CURR']==client_id]
 # # Score des prédictions de probabiltés
-y_proba = best_model.predict_proba(X_test.drop('SK_ID_CURR', axis=1))[:, 1]
-# y_proba = requests.get(f"http://localhost:8501/{client_id}").json()['result']
+# y_proba = best_model.predict_proba(X_test.drop('SK_ID_CURR', axis=1))[:, 1]
+session = requests.Session()
+retry = Retry(connect=3, backoff_factor=0.5)
+adapter = HTTPAdapter(max_retries=retry)
+session.mount('http://', adapter)
+session.mount('https://', adapter)
+y_proba = session.get(f"https://api-dashboards.herokuapp.com/{client_id}").json()['result']
 # Score du client en pourcentage arrondi et nombre entier
 score_client = int(np.rint(y_proba*100))
 
