@@ -52,24 +52,24 @@ def home():
     response.mimetype = "text/plain"
     return response
 
-# def predict(client_id):
-    # X_test=test_set[test_set['SK_ID_CURR']==int(client_id)]
-    # y_proba=best_model.predict_proba(X_test.drop(['SK_ID_CURR'],axis=1))[:, 1]
-    # return y_proba
+#def predict(client_id):
+    #X_test=test_set[test_set['SK_ID_CURR']==int(client_id)]
+    #y_proba=best_model.predict_proba(X_test.drop(['SK_ID_CURR'],axis=1))[:, 1]
+    #return y_proba
     # return jsonify({'result': str(np.around(y_proba[0]*100,2))+'%'})
 
 #prédit le score de faillite d'un client sélectionné
-@app.route('/<int:client_id>/')
+@app.route('/<int:client_id>/', methods=["GET"])
 def predict(client_id):
-
     if client_id not in list(test_set['SK_ID_CURR']):
         return 'Ce client n\'est pas dans la base de donnée'
     else:
-        X_test=test_set[test_set['SK_ID_CURR']==int(client_id)]
+        # client_id = request.args.get(client_id)
+        X_test=test_set[test_set['SK_ID_CURR']==client_id]
         y_proba=best_model.predict_proba(X_test.drop(['SK_ID_CURR'],axis=1))[:, 1]
-        return jsonify({'result': 'Le client est solvable avec un score de '+str(np.around(y_proba*100,2))+'%'})
-
+        return jsonify({'result': y_proba[0]})
 
 if __name__ == '__main__':
     app.run(debug=True)
     pass
+
