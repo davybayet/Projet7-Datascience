@@ -1,1 +1,2 @@
 Le dashboard interactif est fonctionnel et est déployé et disponible sur heroku : https://myscoringdashboard.herokuapp.com 
+API de prédiction du score client disponible également sur heroku: https://api-dashboards.herokuapp.com/
